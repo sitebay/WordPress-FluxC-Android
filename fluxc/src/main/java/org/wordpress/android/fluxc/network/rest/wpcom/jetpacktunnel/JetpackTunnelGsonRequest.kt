@@ -19,7 +19,7 @@ import java.net.URLEncoder
  * ## GET:
  *
  * Example request:
- * https://public-api.wordpress.com/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://mytest.sitebay.org/rest/v1.1/jetpack-blogs/$siteId/rest-api/
  * ?path=%2Fwp%2Fv2%2Fposts%2F%26_method%3Dget%26status%3Ddraft&json=true
  *
  * Broken down, the GET parameters are:
@@ -35,7 +35,7 @@ import java.net.URLEncoder
  * ## POST:
  *
  * Example request:
- * https://public-api.wordpress.com/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://mytest.sitebay.org/rest/v1.1/jetpack-blogs/$siteId/rest-api/
  *
  * Body (Form URL-Encoded):
  * path=%2Fwp%2Fv2%2Fposts%2F%26_method%3Dpost&body=%7B%22title%22%3A%22test-title%22%7D&json=true
@@ -66,7 +66,7 @@ import java.net.URLEncoder
  * Instead, any arguments intended for the WP-API endpoint are added to the `path` parameter.
  *
  * Example request:
- * https://public-api.wordpress.com/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://mytest.sitebay.org/rest/v1.1/jetpack-blogs/$siteId/rest-api/
  *
  * Body (Form URL-Encoded):
  * path=%2Fwp%2Fv2%2Fposts%2F123456%2F%26_method%3Ddelete%26force%3Dtrue&json=true

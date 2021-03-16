@@ -13,5 +13,5 @@ test {
 
 repositories {
     google()
-    jcenter()
+    mavenCentral()
 }

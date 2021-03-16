@@ -4,8 +4,8 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
-        maven { url "https://dl.bintray.com/automattic/maven/" }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
@@ -23,8 +23,9 @@ allprojects {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url "http://dl.bintray.com/terl/lazysodium-maven" }
+        maven { url "https://jitpack.io" }
     }
 
     task checkstyle(type: Checkstyle) {

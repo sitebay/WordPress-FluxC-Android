@@ -169,8 +169,8 @@ class NotificationSqlUtilsTest {
 
             // verify links
             assertNotNull(links)
-            assertEquals(links!!.site, "https://public-api.wordpress.com/rest/v1/sites/141286411")
-            assertEquals(links!!.order, "https://public-api.wordpress.com/rest/v1/orders/88")
+            assertEquals(links!!.site, "https://mytest.sitebay.org/rest/v1/sites/141286411")
+            assertEquals(links!!.order, "https://mytest.sitebay.org/rest/v1/orders/88")
         }
     }
 

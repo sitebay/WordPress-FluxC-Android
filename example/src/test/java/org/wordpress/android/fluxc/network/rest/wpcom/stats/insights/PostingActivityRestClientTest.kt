@@ -73,7 +73,7 @@ class PostingActivityRestClientTest {
 
         Assertions.assertThat(responseModel.response).isNotNull
         Assertions.assertThat(responseModel.response).isEqualTo(POSTING_ACTIVITY_RESPONSE)
-        val url = "https://public-api.wordpress.com/rest/v1.1/sites/12/stats/streak/"
+        val url = "https://mytest.sitebay.org/rest/v1.1/sites/12/stats/streak/"
         Assertions.assertThat(urlCaptor.lastValue).isEqualTo(url)
         Assertions.assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(

@@ -108,7 +108,7 @@ class ExperimentRestClientTest {
     }
 
     companion object {
-        const val EXPERIMENTS_ENDPOINT = "https://public-api.wordpress.com/wpcom/v2/experiments"
+        const val EXPERIMENTS_ENDPOINT = "https://mytest.sitebay.org/wpcom/v2/experiments"
 
         val defaultPlatform = CALYPSO
 
