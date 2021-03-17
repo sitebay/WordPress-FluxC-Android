@@ -616,7 +616,8 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public boolean isUsingWpComRestApi() {
-        return isWPCom() || (isJetpackConnected() && getOrigin() == ORIGIN_WPCOM_REST);
+        return false;
+        //isWPCom() || (isJetpackConnected() && getOrigin() == ORIGIN_WPCOM_REST);
     }
 
     public void setSpaceAvailable(long spaceAvailable) {
