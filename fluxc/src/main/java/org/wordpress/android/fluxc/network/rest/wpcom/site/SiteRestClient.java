@@ -1114,8 +1114,8 @@ public class SiteRestClient extends BaseWPComRestClient {
         site.setIsVisible(from.visible);
         site.setIsPrivate(from.is_private);
         site.setIsComingSoon(from.is_coming_soon);
-        site.setUsername("default");
-        site.setPassword("default");
+        //site.setUsername("default");
+        //site.setPassword("default");
         site.setSelfHostedSiteId(from.ID);
         site.setIsSelfHostedAdmin(true);
         site.setIsWPCom(false);
