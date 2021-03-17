@@ -21,6 +21,8 @@ import java.net.URISyntaxException;
 
 import static java.lang.annotation.RetentionPolicy.SOURCE;
 
+import android.util.Log;
+
 @Table
 @RawConstraints({"UNIQUE (SITE_ID, URL)"})
 public class SiteModel extends Payload<BaseNetworkError> implements Identifiable, Serializable {
@@ -130,6 +132,7 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
 
     @Override
     public void setId(int id) {
+        Log.i("TEST SET ID","TEST SET ID");
         mId = id;
     }
 
@@ -137,6 +140,7 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public long getSiteId() {
+        Log.i("TEST GET ID","TEST GET ID");
         return mSiteId;
     }
 
@@ -183,11 +187,11 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public boolean isWPCom() {
-        return mIsWPCom;
+        return false;
     }
 
     public void setIsWPCom(boolean wpCom) {
-        mIsWPCom = wpCom;
+        mIsWPCom = false;
     }
 
     public String getUsername() {
@@ -199,10 +203,12 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public String getPassword() {
+        Log.i("TEST GET PASSWORD","TEST GET PASSWORD");
         return mPassword;
     }
 
     public void setPassword(String password) {
+        Log.i("TEST SET PASSWORD","TEST SET PASSWORD"+password);
         mPassword = password;
     }
 

@@ -8,6 +8,8 @@ import org.wordpress.android.util.AppLog;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.util.Log;
+
 public class DiscoveryUtils {
     /**
      * Strip known unnecessary paths from XML-RPC URL and remove trailing slashes
@@ -56,6 +58,7 @@ public class DiscoveryUtils {
         if (url.contains("xmlrpc.php")) {
             return url;
         } else {
+            Log.i("TEST APPEND XMLRPC","TEST APPEND XMLRPC");
             return url + "/xmlrpc.php";
         }
     }
