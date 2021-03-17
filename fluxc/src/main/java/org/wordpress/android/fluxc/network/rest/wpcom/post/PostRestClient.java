@@ -244,8 +244,6 @@ public class PostRestClient extends BaseWPComRestClient {
                     @Override
                     public void onResponse(PostWPComRestResponse response) {
                         PostModel uploadedPost = postResponseToPostModel(response);
-                        
-                        final AppLog.d(T.TESTS, url);
 
                         uploadedPost.setIsLocalDraft(false);
                         uploadedPost.setIsLocallyChanged(false);
