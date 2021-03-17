@@ -140,27 +140,3 @@
 /jetpack-install/$site#String
 
 /encrypted-logging
-
-wp.getProfile
-wp.getOptions
-wp.getPostFormats
-wp.getUsersBlogs
-wp.getMediaLibrary
-wp.getMediaItem
-wp.getPost
-wp.getPosts
-wp.newPost
-wp.editPost
-wp.deletePost
-wp.getTerm
-wp.getTerms
-wp.newTerm
-wp.deleteTerm
-wp.editTerm
-wp.uploadFile
-wp.newComment
-wp.getComment
-wp.getComments
-wp.deleteComment
-wp.editComment
-system.listMethods
