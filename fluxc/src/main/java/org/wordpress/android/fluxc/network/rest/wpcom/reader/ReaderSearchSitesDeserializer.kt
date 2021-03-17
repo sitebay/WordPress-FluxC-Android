@@ -11,6 +11,7 @@ import org.wordpress.android.fluxc.network.utils.getJsonObject
 import org.wordpress.android.fluxc.network.utils.getLong
 import org.wordpress.android.fluxc.network.utils.getString
 import java.lang.reflect.Type
+import android.util.Log;
 
 class ReaderSearchSitesDeserializer : JsonDeserializer<ReaderSearchSitesResponse> {
     @Throws(JsonParseException::class)
@@ -29,6 +30,7 @@ class ReaderSearchSitesDeserializer : JsonDeserializer<ReaderSearchSitesResponse
             site.subscribeUrl = jsonFeed.getString("subscribe_URL")
             site.subscriberCount = jsonFeed.getInt("subscribers_count")
             site.url = jsonFeed.getString("URL")
+            Log.i("TEST SET SITE URL","TEST SET SITE URL"+site.url);
             site.title = jsonFeed.getString("title", unescapeHtml4 = true)
 
             // parse the site meta data

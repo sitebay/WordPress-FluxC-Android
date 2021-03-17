@@ -1,3 +1,0 @@
-fluxc.ENABLE_WPAPI = false
-android.useAndroidX=true
-android.enableJetifier=true
