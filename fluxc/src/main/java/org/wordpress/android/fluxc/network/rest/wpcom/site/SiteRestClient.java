@@ -1114,7 +1114,12 @@ public class SiteRestClient extends BaseWPComRestClient {
         site.setIsVisible(from.visible);
         site.setIsPrivate(from.is_private);
         site.setIsComingSoon(from.is_coming_soon);
-        // Depending of user's role, options could be "hidden", for instance an "Author" can't read site options.
+        site.setUsername("default");
+        site.setPassword("default");
+        site.setSelfHostedSiteId(from.ID);
+        site.setIsSelfHostedAdmin(true);
+        site.setIsWPCom(false);
+         // Depending of user's role, options could be "hidden", for instance an "Author" can't read site options.
         if (from.options != null) {
             site.setIsFeaturedImageSupported(from.options.featured_images_enabled);
             site.setIsVideoPressSupported(from.options.videopress_enabled);
@@ -1201,9 +1206,11 @@ public class SiteRestClient extends BaseWPComRestClient {
         }
         // Only set the isWPCom flag for "pure" WPCom sites
         if (!from.jetpack) {
-            site.setIsWPCom(true);
+            //site.setIsWPCom(true);
+            site.setIsWPCom(false);
         }
-        site.setOrigin(SiteModel.ORIGIN_WPCOM_REST);
+        //site.setOrigin(SiteModel.ORIGIN_WPCOM_REST);
+        site.setOrigin(SiteModel.ORIGIN_XMLRPC);
         return site;
     }
 
