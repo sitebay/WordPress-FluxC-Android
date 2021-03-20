@@ -14,7 +14,7 @@ val PLAN_OFFER_MODELS = listOf(
                 PlanOffersModel.Feature("jetpack-essentials", "JE Features", "JE Description")
         ), "WordPress.com Free",
                 "Free",
-                "Best for Getting Started",
+                "Best for Getting Started!",
                 "Free description",
                 "https://s0.wordpress.com/i/store/mobile/plan-free.png"
         ), PlanOffersModel(
@@ -22,7 +22,7 @@ val PLAN_OFFER_MODELS = listOf(
         PlanOffersModel.Feature("custom-domain", "Custom Domain Name", "CDN Description"),
         PlanOffersModel.Feature("support-live", "Email & Live Chat Support", "LS Description"),
         PlanOffersModel.Feature("no-ads", "Remove WordPress.com Ads", "No Ads Description")
-), "WordPress.com Premium",
+), "WordPress.com Premium!",
         "Premium",
         "Best for Entrepreneurs and Freelancers",
         "Premium description",
