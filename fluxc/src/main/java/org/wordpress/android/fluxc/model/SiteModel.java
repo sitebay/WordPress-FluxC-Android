@@ -191,7 +191,7 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public void setIsWPCom(boolean wpCom) {
-        mIsWPCom = false;
+        mIsWPCom = wpCom;
     }
 
     public String getUsername() {
