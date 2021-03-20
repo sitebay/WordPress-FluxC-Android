@@ -206,7 +206,7 @@ public class SiteXMLRPCClient extends BaseXMLRPCClient {
             site.setXmlRpcUrl(MapUtils.getMapStr(siteMap, "xmlrpc"));
             site.setIsSelfHostedAdmin(MapUtils.getMapBool(siteMap, "isAdmin"));
             // From what we know about the host
-            site.setIsWPCom(false);
+            site.setIsWPCom(true);
             site.setUsername(username);
             site.setPassword(password);
             site.setOrigin(SiteModel.ORIGIN_XMLRPC);
