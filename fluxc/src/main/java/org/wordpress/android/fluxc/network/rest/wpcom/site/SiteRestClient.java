@@ -1117,8 +1117,8 @@ public class SiteRestClient extends BaseWPComRestClient {
         //site.setUsername("default");
         //site.setPassword("default");
         site.setSelfHostedSiteId(from.ID);
-        site.setIsSelfHostedAdmin(true);
-        site.setIsWPCom(false);
+        site.setIsSelfHostedAdmin(false);
+        site.setIsWPCom(true);
          // Depending of user's role, options could be "hidden", for instance an "Author" can't read site options.
         if (from.options != null) {
             site.setIsFeaturedImageSupported(from.options.featured_images_enabled);
