@@ -86,25 +86,31 @@ public class SiteStore extends Store {
         @NonNull public SiteVisibility visibility;
         @Nullable public Long segmentId;
         @Nullable public String siteDesign;
+        @Nullable public String wpEmail;
+        @Nullable public String wpPassword;
+        @Nullable public String wpBlogName;
         @NonNull public boolean dryRun;
 
         public NewSitePayload(@NonNull String siteName, @NonNull String language,
                               @NonNull SiteVisibility visibility, boolean dryRun) {
-            this(siteName, language, visibility, null, null, dryRun);
+            this(siteName, language, visibility, null, null, null, null, null, dryRun);
         }
 
         public NewSitePayload(@NonNull String siteName, @NonNull String language,
                               @NonNull SiteVisibility visibility, @Nullable Long segmentId, boolean dryRun) {
-            this(siteName, language, visibility, segmentId, null, dryRun);
+            this(siteName, language, visibility, segmentId, null, null, null, null, dryRun);
         }
 
         public NewSitePayload(@NonNull String siteName, @NonNull String language, @NonNull SiteVisibility visibility,
-                              @Nullable Long segmentId, @Nullable String siteDesign, boolean dryRun) {
+                              @Nullable Long segmentId, @Nullable String siteDesign, @Nullable String wpEmail, @Nullable String wpPassword, @Nullable String wpBlogName, boolean dryRun) {
             this.siteName = siteName;
             this.language = language;
             this.visibility = visibility;
             this.segmentId = segmentId;
             this.siteDesign = siteDesign;
+            this.wpEmail = wpEmail;
+            this.wpPassword = wpPassword;
+            this.wpBlogName = wpBlogName;
             this.dryRun = dryRun;
         }
     }
@@ -1869,7 +1875,7 @@ public class SiteStore extends Store {
 
     private void createNewSite(NewSitePayload payload) {
         mSiteRestClient.newSite(payload.siteName, payload.language, payload.visibility,
-                payload.segmentId, payload.siteDesign, payload.dryRun);
+                payload.segmentId, payload.siteDesign, payload.wpEmail, payload.wpPassword, payload.wpBlogName, payload.dryRun);
     }
 
     private void handleCreateNewSiteCompleted(NewSiteResponsePayload payload) {

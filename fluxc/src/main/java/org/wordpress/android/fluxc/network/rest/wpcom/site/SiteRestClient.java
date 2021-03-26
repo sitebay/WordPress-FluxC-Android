@@ -221,9 +221,14 @@ public class SiteRestClient extends BaseWPComRestClient {
         add(request);
     }
 
-    public void newSite(@NonNull String siteName, @NonNull String language,
-                        @NonNull SiteVisibility visibility, @Nullable Long segmentId, @Nullable String siteDesign, @NonNull wpEmail,
-                        @NonNull wpPassword, @NonNull wpBlogName,
+    public void newSite(@NonNull String siteName,
+                        @NonNull String language,
+                        @NonNull SiteVisibility visibility,
+                        @Nullable Long segmentId,
+                        @Nullable String siteDesign,
+                        @NonNull String wpEmail,
+                        @NonNull String wpPassword,
+                        @NonNull String wpBlogName,
                         final boolean dryRun) {
         String url = WPCOMREST.sites.new_.getUrlV1_1();
         Map<String, Object> body = new HashMap<>();
@@ -276,7 +281,7 @@ public class SiteRestClient extends BaseWPComRestClient {
                         mDispatcher.dispatch(SiteActionBuilder.newCreatedNewSiteAction(payload));
                     }
                 }
-        );
+                                                                                     );
 
         // Disable retries and increase timeout for site creation (it can sometimes take a long time to complete)
         request.setRetryPolicy(new DefaultRetryPolicy(NEW_SITE_TIMEOUT_MS, 0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
