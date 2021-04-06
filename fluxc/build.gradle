@@ -1,10 +1,13 @@
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
+        google()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath('com.android.support:multidex:1.0.3')
     }
 }
 
@@ -28,6 +31,7 @@ android {
         versionName "0.1"
         minSdkVersion 18
         targetSdkVersion 29
+        multiDexEnabled true
     }
     buildTypes {
         release {
