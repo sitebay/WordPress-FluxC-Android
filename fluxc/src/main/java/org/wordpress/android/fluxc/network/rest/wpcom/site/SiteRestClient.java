@@ -235,6 +235,7 @@ public class SiteRestClient extends BaseWPComRestClient {
                         final boolean dryRun) {
         String url = WPCOMREST.sites.new_.getUrlV1_1();
         Map<String, Object> body = new HashMap<>();
+        body.put("live-domain", siteName);
         body.put("wp-blog-name", wpBlogName);
         body.put("wp-email", wpEmail);
         body.put("wp-username", wpUsername);
