@@ -1882,7 +1882,7 @@ public class SiteStore extends Store {
 
     private void createNewSite(NewSitePayload payload) {
         mSiteRestClient.newSite(payload.siteName, payload.language, payload.visibility,
-                payload.segmentId, payload.siteDesign, payload.wpEmail, payload.wpPassword, payload.wpBlogName, payload.dryRun);
+                payload.segmentId, payload.siteDesign, payload.wpBlogName, payload.wpEmail, payload.wpUserame, payload.wpPassword, payload.wpFirstName, payload.wpLastName, payload.dryRun);
     }
 
     private void handleCreateNewSiteCompleted(NewSiteResponsePayload payload) {
