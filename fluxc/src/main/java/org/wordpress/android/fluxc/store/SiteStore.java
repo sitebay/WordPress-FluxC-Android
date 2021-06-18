@@ -114,15 +114,23 @@ public class SiteStore extends Store {
             this(siteName, language, visibility, segmentId, null, dryRun);
         }
 
+
         public NewSitePayload(@NonNull String siteName, @NonNull String language, @NonNull SiteVisibility visibility,
-                              @Nullable Long segmentId, @Nullable String siteDesign, boolean dryRun) {
+                              @Nullable Long segmentId, @Nullable String siteDesign, @Nullable String wpBlogName, @Nullable String wpEmail, @Nullable String wpUsername, @Nullable String wpPassword, @Nullable String wpFirstName, @Nullable String wpLastName, boolean dryRun) {
             this.siteName = siteName;
             this.language = language;
             this.visibility = visibility;
             this.segmentId = segmentId;
             this.siteDesign = siteDesign;
+            this.wpBlogName = wpBlogName;
+            this.wpEmail = wpEmail;
+            this.wpUserame = wpUsername;
+            this.wpFirstName = wpFirstName;
+            this.wpLastName = wpLastName;
+            this.wpPassword = wpPassword;
             this.dryRun = dryRun;
         }
+
     }
 
     public static class FetchedPostFormatsPayload extends Payload<PostFormatsError> {
