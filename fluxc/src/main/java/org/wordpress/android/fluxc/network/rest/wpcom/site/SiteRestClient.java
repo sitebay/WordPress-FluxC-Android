@@ -238,12 +238,24 @@ public class SiteRestClient extends BaseWPComRestClient {
         add(request);
     }
 
-    public void newSite(@NonNull String siteName, @NonNull String language,
+    public void newSite(@NonNull String siteName,
+                        @NonNull String language,
                         @NonNull SiteVisibility visibility, @Nullable Long segmentId, @Nullable String siteDesign,
+                        @NonNull String wpBlogName,
+                        @NonNull String wpEmail,
+                        @NonNull String wpUsername,
+                        @NonNull String wpPassword,
+                        @NonNull String wpFirstName,
+                        @NonNull String wpLastName,
                         final boolean dryRun) {
         String url = WPCOMREST.sites.new_.getUrlV1_1();
         Map<String, Object> body = new HashMap<>();
         body.put("blog_name", siteName);
+        body.put("wp-email", wpEmail);
+        body.put("wp-username", wpUsername);
+        body.put("wp-password", wpPassword);
+        body.put("wp-first-name", wpFirstName);
+        body.put("wp-last-name", wpLastName);
         body.put("lang_id", language);
         body.put("public", String.valueOf(visibility.value()));
         body.put("validate", dryRun ? "1" : "0");
