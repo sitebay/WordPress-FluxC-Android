@@ -11,12 +11,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_store_address"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_store_address"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_store_address_2"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_store_address_2"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -53,12 +53,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_store_city"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_store_city"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -93,12 +93,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_all_except_countries"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_all_except_countries"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -120,12 +120,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_specific_allowed_countries"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_specific_allowed_countries"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -146,12 +146,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_ship_to_countries"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_ship_to_countries"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -173,12 +173,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_specific_ship_to_countries"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_specific_ship_to_countries"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -199,12 +199,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_default_customer_address"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_default_customer_address"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -220,12 +220,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_calc_taxes"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_calc_taxes"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -241,12 +241,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_enable_coupons"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_enable_coupons"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -262,12 +262,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_calc_discounts_sequentially"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_calc_discounts_sequentially"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -447,12 +447,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_currency"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_currency"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -474,12 +474,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_currency_pos"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_currency_pos"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -495,12 +495,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_price_thousand_sep"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_price_thousand_sep"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -516,12 +516,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_price_decimal_sep"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_price_decimal_sep"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -537,12 +537,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_price_num_decimals"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_price_num_decimals"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -557,12 +557,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_bookings_tz_calculation"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_bookings_tz_calculation"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }
@@ -581,12 +581,12 @@
       "_links": {
         "self": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general\/woocommerce_bookings_timezone_conversion"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general\/woocommerce_bookings_timezone_conversion"
           }
         ],
         "collection": [
           {
-            "href": "https:\/\/wordpress.com\/wp-json\/wc\/v3\/settings\/general"
+            "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v3\/settings\/general"
           }
         ]
       }

@@ -117,7 +117,7 @@ public class ReleaseStack_DiscoveryTest extends ReleaseStack_Base {
 
     @Test
     public void testWPComUrlFetchSites() throws InterruptedException {
-        mUrl = "mysite.wordpress.com";
+        mUrl = "mysite.mytest.sitebay.org";
         mUsername = BuildConfig.TEST_WPCOM_USERNAME_TEST1;
         mPassword = BuildConfig.TEST_WPCOM_PASSWORD_TEST1;
 

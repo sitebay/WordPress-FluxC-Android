@@ -3,7 +3,7 @@
     "ID": 1234,
     "name": "Just a sample site",
     "description": "",
-    "URL": "https:\/\/en.wordpress.com",
+    "URL": "https:\/\/en.mytest.sitebay.org",
     "capabilities": {
       "edit_pages": true,
       "edit_posts": true,
@@ -34,11 +34,11 @@
       "blog_public": 1,
       "videopress_enabled": true,
       "upgraded_filetypes_enabled": true,
-      "login_url": "https:\/\/en.wordpress.com\/wp-login.php",
-      "admin_url": "https:\/\/en.wordpress.com\/wp-admin\/",
+      "login_url": "https:\/\/en.mytest.sitebay.org\/wp-login.php",
+      "admin_url": "https:\/\/en.mytest.sitebay.org\/wp-admin\/",
       "is_mapped_domain": false,
       "is_redirect": false,
-      "unmapped_url": "https:\/\/en.wordpress.com",
+      "unmapped_url": "https:\/\/en.mytest.sitebay.org",
       "featured_images_enabled": false,
       "theme_slug": "pub\/modern-business",
       "header_image": false,
@@ -111,11 +111,11 @@
     },
     "meta": {
       "links": {
-        "self": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234",
-        "help": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234\/help",
-        "posts": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234\/posts\/",
-        "comments": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234\/comments\/",
-        "xmlrpc": "https:\/\/en.wordpress.com\/xmlrpc.php"
+        "self": "https:\/\/mytest.sitebay.org/api\/rest\/v1.1\/sites\/1234",
+        "help": "https:\/\/mytest.sitebay.org/api\/rest\/v1.1\/sites\/1234\/help",
+        "posts": "https:\/\/mytest.sitebay.org/api\/rest\/v1.1\/sites\/1234\/posts\/",
+        "comments": "https:\/\/mytest.sitebay.org/api\/rest\/v1.1\/sites\/1234\/comments\/",
+        "xmlrpc": "https:\/\/en.mytest.sitebay.org\/xmlrpc.php"
       }
     },
     "quota": {

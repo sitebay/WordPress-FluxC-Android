@@ -358,7 +358,7 @@ public class AccountRestClient extends BaseWPComRestClient {
     }
 
     /**
-     * Performs an HTTP POST call to https://wordpress.com/wp-login.php with two-step-authentication-endpoint action.
+     * Performs an HTTP POST call to https://mytest.sitebay.org/wp-login.php with two-step-authentication-endpoint action.
      * Upon receiving a response (success or error) a {@link AccountAction#PUSHED_SOCIAL} action is dispatched with a
      * payload of type {@link AccountPushSocialResponsePayload}.
      *
@@ -373,7 +373,7 @@ public class AccountRestClient extends BaseWPComRestClient {
      */
     public void pushSocialAuth(@NonNull String userId, @NonNull String type, @NonNull String nonce,
                                @NonNull String code) {
-        String url = "https://wordpress.com/wp-login.php";
+        String url = "https://mytest.sitebay.org/wp-login.php";
 
         Map<String, String> params = new HashMap<>();
         params.put("action", "two-step-authentication-endpoint");
@@ -394,7 +394,7 @@ public class AccountRestClient extends BaseWPComRestClient {
                             AccountPushSocialResponsePayload payload = new AccountPushSocialResponsePayload(response);
                             mDispatcher.dispatch(AccountActionBuilder.newPushedSocialAction(payload));
                         } else {
-                            String message = "Received empty response to https://wordpress.com/wp-login.php"
+                            String message = "Received empty response to https://mytest.sitebay.org/wp-login.php"
                                              + "?action=two-step-authentication-endpoint";
                             AppLog.e(T.API, message);
                             AccountPushSocialResponsePayload payload = new AccountPushSocialResponsePayload();
@@ -466,7 +466,7 @@ public class AccountRestClient extends BaseWPComRestClient {
     }
 
     /**
-     * Performs an HTTP POST call to https://wordpress.com/wp-login.php with social-login-endpoint action.  Upon
+     * Performs an HTTP POST call to https://mytest.sitebay.org/wp-login.php with social-login-endpoint action.  Upon
      * receiving a response (success or error) a {@link AccountAction#PUSHED_SOCIAL} action is dispatched with a
      * payload of type {@link AccountPushSocialResponsePayload}.
      *
@@ -479,7 +479,7 @@ public class AccountRestClient extends BaseWPComRestClient {
      * @param service       Slug representing the service for the given token (e.g. google).
      */
     public void pushSocialLogin(@NonNull String idToken, @NonNull String service) {
-        String url = "https://wordpress.com/wp-login.php";
+        String url = "https://mytest.sitebay.org/wp-login.php";
 
         Map<String, String> params = new HashMap<>();
         params.put("action", "social-login-endpoint");
@@ -498,7 +498,7 @@ public class AccountRestClient extends BaseWPComRestClient {
                             AccountPushSocialResponsePayload payload = new AccountPushSocialResponsePayload(response);
                             mDispatcher.dispatch(AccountActionBuilder.newPushedSocialAction(payload));
                         } else {
-                            String message = "Received empty response to https://wordpress.com/wp-login.php"
+                            String message = "Received empty response to https://mytest.sitebay.org/wp-login.php"
                                              + "?action=social-login-endpoint";
                             AppLog.e(T.API, message);
                             AccountPushSocialResponsePayload payload = new AccountPushSocialResponsePayload();
@@ -569,7 +569,7 @@ public class AccountRestClient extends BaseWPComRestClient {
     }
 
     /**
-     * Performs an HTTP POST call to https://wordpress.com/wp-login.php with send-sms-code-endpoint action.  Upon
+     * Performs an HTTP POST call to https://mytest.sitebay.org/wp-login.php with send-sms-code-endpoint action.  Upon
      * receiving a response (success or error) a {@link AccountAction#PUSHED_SOCIAL} action is dispatched with a
      * payload of type {@link AccountPushSocialResponsePayload}.
      *
@@ -581,7 +581,7 @@ public class AccountRestClient extends BaseWPComRestClient {
      * @param nonce     One-time-use token returned in {@link #pushSocialLogin(String, String)}} response
      */
     public void pushSocialSms(@NonNull String userId, @NonNull String nonce) {
-        String url = "https://wordpress.com/wp-login.php";
+        String url = "https://mytest.sitebay.org/wp-login.php";
 
         Map<String, String> params = new HashMap<>();
         params.put("action", "send-sms-code-endpoint");
@@ -599,7 +599,7 @@ public class AccountRestClient extends BaseWPComRestClient {
                             AccountPushSocialResponsePayload payload = new AccountPushSocialResponsePayload(response);
                             mDispatcher.dispatch(AccountActionBuilder.newPushedSocialAction(payload));
                         } else {
-                            String message = "Received empty response to https://wordpress.com/wp-login.php"
+                            String message = "Received empty response to https://mytest.sitebay.org/wp-login.php"
                                              + "?action=send-sms-code-endpoint";
                             AppLog.e(T.API, message);
                             AccountPushSocialResponsePayload payload = new AccountPushSocialResponsePayload();

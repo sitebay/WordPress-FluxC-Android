@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Response to GET request for media items
  *
- * https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/media/%24media_ID/
+ * https://developer.mytest.sitebay.org/docs/api/1.1/get/sites/%24site/media/%24media_ID/
  */
 public class MediaWPComRestResponse implements Response {
     public static final String DELETED_STATUS = "deleted";

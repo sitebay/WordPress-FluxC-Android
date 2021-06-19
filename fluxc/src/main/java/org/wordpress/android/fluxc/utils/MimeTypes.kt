@@ -19,7 +19,7 @@ class MimeTypes {
     }
 
     /*
-     * The WordPress supported audio types based on https://wordpress.com/support/accepted-filetypes/ are:
+     * The WordPress supported audio types based on https://mytest.sitebay.org/support/accepted-filetypes/ are:
      * .mp3, .m4a, .ogg, .wav
      * This translates (based on https://android.googlesource.com/platform/frameworks/base/+/cd92588/media/java/android/media/MediaFile.java) to:
      * .mp3 - "audio/mpeg"
@@ -36,7 +36,7 @@ class MimeTypes {
     )
 
     /*
-     * The WordPress supported video types based on https://wordpress.com/support/accepted-filetypes/ are:
+     * The WordPress supported video types based on https://mytest.sitebay.org/support/accepted-filetypes/ are:
      * .mp4, .m4v (MPEG-4), .mov (QuickTime), .wmv (Windows Media Video), .avi, .mpg, .ogv (Ogg), .3gp (3GPP), .3g2 (3GPP2)
      * This translates (based on https://android.googlesource.com/platform/frameworks/base/+/cd92588/media/java/android/media/MediaFile.java) to:
      * .mp4, .m4v (MPEG-4) - "video/mp4"
@@ -61,7 +61,7 @@ class MimeTypes {
     )
 
     /*
-     * The WordPress supported image types based on https://wordpress.com/support/accepted-filetypes/ are:
+     * The WordPress supported image types based on https://mytest.sitebay.org/support/accepted-filetypes/ are:
      * .jpg, .jpeg, .png, .gif
      * This translates (based on https://android.googlesource.com/platform/frameworks/base/+/cd92588/media/java/android/media/MediaFile.java) to:
      * .jpg, .jpeg - "image/jpeg"
@@ -77,7 +77,7 @@ class MimeTypes {
     /*
      * Free MIME Types
      *
-     * The WordPress supported image types based on https://wordpress.com/support/accepted-filetypes/ are:
+     * The WordPress supported image types based on https://mytest.sitebay.org/support/accepted-filetypes/ are:
      * .pdf (Portable Document Format; Adobe Acrobat), .doc, .docx (Microsoft Word Document), .ppt, .pptx, .pps, .ppsx (Microsoft PowerPoint Presentation), .odt (OpenDocument Text Document), .xls, .xlsx (Microsoft Excel Document), .key (Apple Keynote Presentation), .zip (Archive File Format)
      * This translates (based on https://android.googlesource.com/platform/frameworks/base/+/cd92588/media/java/android/media/MediaFile.java) to:
      * .pdf - "application/pdf"

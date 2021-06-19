@@ -305,7 +305,7 @@ class CommentSqlUtilsTest {
 
         val localLike = createLike(siteId, commentId)
         val localLikeChanged = createLike(siteId, commentId).apply {
-            likerSiteUrl = "https://likerSiteUrl.wordpress.com"
+            likerSiteUrl = "https://likerSiteUrl.mytest.sitebay.org"
         }
 
         CommentSqlUtils.insertOrUpdateCommentLikes(siteId, commentId, localLike)

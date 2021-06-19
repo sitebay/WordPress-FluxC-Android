@@ -274,14 +274,14 @@ public class ReleaseStack_SiteTestWPCom extends ReleaseStack_Base {
 
     @Test
     public void testFetchWPComSiteByUrl() throws InterruptedException {
-        String site = "http://en.blog.wordpress.com";
+        String site = "http://en.blog.mytest.sitebay.org";
         mDispatcher.dispatch(SiteActionBuilder.newFetchWpcomSiteByUrlAction(site));
         mNextEvent = TestEvents.FETCHED_WPCOM_SITE_BY_URL;
         mCountDownLatch = new CountDownLatch(1);
         assertTrue(mCountDownLatch.await(TestUtils.DEFAULT_TIMEOUT_MS, TimeUnit.MILLISECONDS));
 
         // Sites in subfolders should be handled and return a response distinct from their host
-        site = "http://en.blog.wordpress.com/nonexistentsubdomain";
+        site = "http://en.blog.mytest.sitebay.org/nonexistentsubdomain";
         mDispatcher.dispatch(SiteActionBuilder.newFetchWpcomSiteByUrlAction(site));
         mNextEvent = TestEvents.ERROR_UNKNOWN_SITE;
         mCountDownLatch = new CountDownLatch(1);
@@ -623,7 +623,7 @@ public class ReleaseStack_SiteTestWPCom extends ReleaseStack_Base {
             return;
         }
 
-        final String wpcomSuffix = ".wordpress.com";
+        final String wpcomSuffix = ".mytest.sitebay.org";
         final String dotBlogSuffix = ".blog";
         final String dotNetSuffix = ".net";
 

@@ -505,7 +505,7 @@ public class SiteStoreUnitTest {
         SiteModel wpComSite1 = generateWPComSite();
         wpComSite1.setName("Doctor Emmet Brown Homepage");
         SiteModel wpComSite2 = generateWPComSite();
-        wpComSite2.setUrl("shieldeyesfromlight.wordpress.com");
+        wpComSite2.setUrl("shieldeyesfromlight.mytest.sitebay.org");
         SiteModel selfHostedSite = generateSelfHostedNonJPSite();
         selfHostedSite.setName("I remember when this was all farmland as far as the eye could see.");
 
@@ -527,7 +527,7 @@ public class SiteStoreUnitTest {
         SiteModel wpComSite1 = generateWPComSite();
         wpComSite1.setName("Doctor Emmet Brown Homepage");
         SiteModel wpComSite2 = generateWPComSite();
-        wpComSite2.setUrl("shieldeyesfromlight.wordpress.com");
+        wpComSite2.setUrl("shieldeyesfromlight.mytest.sitebay.org");
         SiteModel selfHostedSite = generateSelfHostedNonJPSite();
         selfHostedSite.setName("I remember when this was all farmland as far as the eye could see.");
 

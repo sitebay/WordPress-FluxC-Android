@@ -119,7 +119,7 @@ class PostSqlUtilsTest {
 
         val localLike = createLike(siteId, postId)
         val localLikeChanged = createLike(siteId, postId).apply {
-            likerSiteUrl = "https://likerSiteUrl.wordpress.com"
+            likerSiteUrl = "https://likerSiteUrl.mytest.sitebay.org"
         }
 
         postSqlUtils.insertOrUpdatePostLikes(siteId, postId, localLike)

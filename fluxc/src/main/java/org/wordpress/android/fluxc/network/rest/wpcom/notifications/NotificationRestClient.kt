@@ -125,7 +125,7 @@ class NotificationRestClient @Inject constructor(
      * Requests a fresh batch of notifications from the api containing only the fields "id" and "note_hash".
      *
      * API endpoint:
-     * https://developer.wordpress.com/docs/api/1/get/notifications/
+     * https://developer.mytest.sitebay.org/docs/api/1/get/notifications/
      */
     fun fetchNotificationHashes() {
         val url = WPCOMREST.notifications.urlV1_1
@@ -157,7 +157,7 @@ class NotificationRestClient @Inject constructor(
     /**
      * Fetch the latest list of notifications.
      *
-     * https://developer.wordpress.com/docs/api/1/get/notifications/
+     * https://developer.mytest.sitebay.org/docs/api/1/get/notifications/
      *
      * @param remoteNoteIds Optional. A list of remote notification ids to be fetched from the remote api
      */
@@ -197,7 +197,7 @@ class NotificationRestClient @Inject constructor(
     /**
      * Fetch a single notification by its remote note_id.
      *
-     * https://developer.wordpress.com/docs/api/1/get/notifications/%s
+     * https://developer.mytest.sitebay.org/docs/api/1/get/notifications/%s
      */
     fun fetchNotification(remoteNoteId: Long) {
         val url = WPCOMREST.notifications.note(remoteNoteId).urlV1_1
@@ -228,7 +228,7 @@ class NotificationRestClient @Inject constructor(
      * Send the timestamp of the last notification seen to update the last set of notifications seen
      * on the server.
      *
-     * https://developer.wordpress.com/docs/api/1/post/notifications/seen
+     * https://developer.mytest.sitebay.org/docs/api/1/post/notifications/seen
      */
     fun markNotificationsSeen(timestamp: Long) {
         val url = WPCOMREST.notifications.seen.urlV1_1
@@ -254,7 +254,7 @@ class NotificationRestClient @Inject constructor(
      * Mark a notification as read
      * Decrement the unread count for a notification. Key=note_ID, Value=decrement amount.
      *
-     * https://developer.wordpress.com/docs/api/1/post/notifications/read/
+     * https://developer.mytest.sitebay.org/docs/api/1/post/notifications/read/
      */
     fun markNotificationRead(notifications: List<NotificationModel>) {
         val url = WPCOMREST.notifications.read.urlV1_1
