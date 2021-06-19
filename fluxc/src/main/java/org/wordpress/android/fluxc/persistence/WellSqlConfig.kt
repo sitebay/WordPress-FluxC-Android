@@ -1788,7 +1788,7 @@ open class WellSqlConfig : DefaultWellConfig {
      * don't want this to ever be enabled for release builds by mistake).
      */
     override fun onDowngrade(db: SQLiteDatabase?, helper: WellTableManager?, oldVersion: Int, newVersion: Int) {
-        if (BuildConfig.DEBUG && BuildConfig.WP_ENABLE_DATABASE_DOWNGRADE) {
+        if (BuildConfig.DEBUG) {
             // note: don't call super() here because it throws an exception
             val toast = Toast.makeText(
                     context,
