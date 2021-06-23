@@ -9,6 +9,7 @@ import com.yarolegovich.wellsql.core.annotation.PrimaryKey;
 import com.yarolegovich.wellsql.core.annotation.RawConstraints;
 import com.yarolegovich.wellsql.core.annotation.Table;
 
+import org.jetbrains.annotations.NotNull;
 import org.wordpress.android.fluxc.Payload;
 import org.wordpress.android.fluxc.network.BaseRequest.BaseNetworkError;
 import org.wordpress.android.util.AppLog;
@@ -183,7 +184,7 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public boolean isWPCom() {
-        return mIsWPCom;
+        return false;
     }
 
     public void setIsWPCom(boolean wpCom) {
@@ -608,7 +609,8 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
 
     @SiteOrigin
     public int getOrigin() {
-        return mOrigin;
+        // Site Bay sites always use XMLRPC
+        return SiteModel.ORIGIN_XMLRPC;
     }
 
     public void setOrigin(@SiteOrigin int origin) {

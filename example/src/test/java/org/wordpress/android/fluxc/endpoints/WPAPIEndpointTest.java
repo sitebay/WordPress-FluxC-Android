@@ -34,11 +34,11 @@ public class WPAPIEndpointTest {
 
     @Test
     public void testUrls() {
-        assertEquals("wp/v2/posts/", WPAPI.posts.getUrlV2());
-        assertEquals("wp/v2/pages/", WPAPI.pages.getUrlV2());
-        assertEquals("wp/v2/media/", WPAPI.media.getUrlV2());
-        assertEquals("wp/v2/comments/", WPAPI.comments.getUrlV2());
-        assertEquals("wp/v2/users/", WPAPI.users.getUrlV2());
-        assertEquals("wp/v2/users/me/", WPAPI.users.me.getUrlV2());
+        assertEquals("api/posts/", WPAPI.posts.getUrlV2());
+        assertEquals("api/pages/", WPAPI.pages.getUrlV2());
+        assertEquals("api/media/", WPAPI.media.getUrlV2());
+        assertEquals("api/comments/", WPAPI.comments.getUrlV2());
+        assertEquals("api/users/", WPAPI.users.getUrlV2());
+        assertEquals("api/users/me/", WPAPI.users.me.getUrlV2());
     }
 }

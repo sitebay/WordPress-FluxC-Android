@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:hint="Enter path"
-        android:text="wp/v2/media?context=edit"
+        android:text="api/media?context=edit"
         android:imeOptions="actionSend"
         android:inputType="textUri"
         app:layout_constraintTop_toTopOf="@+id/frame"

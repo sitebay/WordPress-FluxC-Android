@@ -76,7 +76,7 @@ class MockedStack_JetpackTunnelTest : MockedStack_Base() {
                 RootWPAPIRestResponse::class.java,
                 { response: RootWPAPIRestResponse? ->
                     // Verify that the successful response is correctly parsed
-                    assertTrue(response?.namespaces?.contains("wp/v2")!!)
+                    assertTrue(response?.namespaces?.contains("api")!!)
                     countDownLatch.countDown()
                 },
                 WPComErrorListener { error ->
@@ -93,7 +93,7 @@ class MockedStack_JetpackTunnelTest : MockedStack_Base() {
     @Test
     fun testSuccessfulPostRequest() {
         val countDownLatch = CountDownLatch(1)
-        val url = "/wp/v2/settings/"
+        val url = "/api/settings/"
 
         val requestBody = mapOf<String, Any>("title" to "New Title", "description" to "New Description")
 
@@ -165,7 +165,7 @@ class MockedStack_JetpackTunnelTest : MockedStack_Base() {
                 RootWPAPIRestResponse::class.java,
                 { response: RootWPAPIRestResponse? ->
                     // Verify that the successful response is correctly parsed
-                    assertTrue(response?.namespaces?.contains("wp/v2")!!)
+                    assertTrue(response?.namespaces?.contains("api")!!)
                     countDownLatch.countDown()
                 },
                 WPComErrorListener { error ->

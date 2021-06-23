@@ -40,11 +40,11 @@ class ReactNativeStoreWpComTest {
         whenever(site.siteId).thenReturn(123456L)
         whenever(site.isUsingWpComRestApi).thenReturn(true)
 
-        val expectedUrl = "https://mytest.sitebay.org/api/wp/v2/sites/${site.siteId}/media"
+        val expectedUrl = "https://mytest.sitebay.org/api/sites/${site.siteId}/media"
         whenever(wpComRestClient.fetch(expectedUrl, mapOf("paramKey" to "paramValue"), ::Success, ::Error))
                 .thenReturn(expectedResponse)
 
-        val actualResponse = store.executeRequest(site, "/wp/v2/media?paramKey=paramValue")
+        val actualResponse = store.executeRequest(site, "/api/media?paramKey=paramValue")
         assertEquals(expectedResponse, actualResponse)
     }
 

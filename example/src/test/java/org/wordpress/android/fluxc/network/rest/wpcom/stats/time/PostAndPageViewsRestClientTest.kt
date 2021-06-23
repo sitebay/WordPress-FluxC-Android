@@ -117,7 +117,7 @@ class PostAndPageViewsRestClientTest {
         assertThat(responseModel.response).isNotNull()
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/12/stats/top-posts/")
+                .isEqualTo("https://mytest.sitebay.org/api/sites/12/stats/top-posts/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "max" to pageSize.toString(),

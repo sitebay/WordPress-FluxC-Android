@@ -3,6 +3,7 @@ package org.wordpress.android.fluxc.model.plans
 import android.annotation.SuppressLint
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
+import okhttp3.internal.format
 
 @Parcelize
 @SuppressLint("ParcelCreator")
@@ -13,7 +14,15 @@ data class PlanOffersModel(
     var shortName: String?,
     var tagline: String?,
     var description: String?,
-    var iconUrl: String?
+    var iconUrl: String?,
+    var costMonth: Int?,
+    var costYear: Int?,
+    var couponId: String?,
+    var couponDiscount: Int?,
+    var taxCode: String?,
+    var taxRate: Int?,
+    var currency: String?
+
 ) : Parcelable {
     @Parcelize
     @SuppressLint("ParcelCreator")
@@ -66,5 +75,58 @@ data class PlanOffersModel(
         result = 31 * result + (description?.hashCode() ?: 0)
         result = 31 * result + (iconUrl?.hashCode() ?: 0)
         return result
+    }
+
+    fun calculateTax(interval: String): Int {
+        var price = costMonth
+        if (interval == "year") {
+            price = costYear
+        }
+        val tax = price?.times((taxRate?.div(100)!!))
+        return tax!!
+    }
+
+    fun calculateTaxFormatted(interval: String): String {
+        val taxCost = calculateTax(interval)
+        return formatPrice(taxCost, true)
+    }
+
+    fun getFormattedCost(interval: String, showCents: Boolean): String {
+        var price = costMonth
+        if (interval == "year") {
+            price = costYear
+        }
+        return formatPrice(price!!, showCents)
+    }
+
+    fun getFormattedCostWithTax(interval: String): String {
+        var price = costMonth
+        if (interval == "year") {
+            price = costYear
+        }
+        if (price != null) {
+            price += calculateTax(interval)
+        }
+        return formatPrice(price!!, true)
+    }
+
+    fun formatPrice(price: Int, showCents: Boolean): String {
+        var priceStr = price.toString()
+        var first = priceStr.dropLast(2)
+        var last = priceStr.takeLast(2)
+        var formattedPrice = "$first.$last"
+        var currSign = "$"
+        if (last == "00") {
+            formattedPrice = "$first"
+        } else if (first == "") {
+            formattedPrice = "0"
+        }
+        if (showCents) {
+            formattedPrice = "$formattedPrice.00"
+        }
+        if (currency == "eur") {
+            currSign = "€"
+        }
+        return currSign + formattedPrice
     }
 }

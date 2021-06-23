@@ -47,11 +47,11 @@ class ReactNativeFragment : Fragment() {
                 |$url.
                 |Only enter the rest endpoint you are trying to hit.
                 |For example, with a self-hosted site instead of entering 
-                |'https://mysite.com/wp-json/wp/v2/media',
-                |just enter 'wp/v2/media'.
+                |'https://mysite.com/wp-json/api/media',
+                |just enter 'api/media'.
                 |For a WP.com site, instead of entering
-                |'https://mytest.sitebay.org/api/wp/v2/sites/12345689/media',
-                |just enter 'wp/v2/media' (site id is handled automatically)""".trimMargin()
+                |'https://mytest.sitebay.org/api/sites/12345689/media',
+                |just enter 'api/media' (site id is handled automatically)""".trimMargin()
         } ?: "Site with url not loaded. All calls will fail."
 
         path_field.setOnEditorActionListener { v, actionId, event ->

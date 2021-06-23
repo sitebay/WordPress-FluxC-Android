@@ -481,7 +481,7 @@ public class ReleaseStack_DiscoveryTest extends ReleaseStack_Base {
 
     @Test
     public void testWPAPIMissingV2SimpleFetchSites() throws InterruptedException {
-        // If the wp/v2 namespace is unsupported, we don't expect a WP-API endpoint to be discovered
+        // If the api namespace is unsupported, we don't expect a WP-API endpoint to be discovered
         // (but an XML-RPC endpoint should be found)
         if (org.wordpress.android.fluxc.BuildConfig.ENABLE_WPAPI) {
             checkSelfHostedSimpleFetchForSite(BuildConfig.TEST_WPORG_URL_SH_WPAPI_MISSING_V2,

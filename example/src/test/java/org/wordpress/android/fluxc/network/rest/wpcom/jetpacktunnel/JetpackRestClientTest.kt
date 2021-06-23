@@ -66,7 +66,7 @@ class JetpackRestClientTest {
     }
 
     fun checkUrlAndLogin() {
-        val url = "https://mytest.sitebay.org/api/rest/v1/jetpack-install/http%3A%2F%2Fwordpress.org/"
+        val url = "https://mytest.sitebay.org/api/jetpack-install/http%3A%2F%2Fwordpress.org/"
         assertThat(urlCaptor.lastValue).isEqualTo(url)
         assertThat(paramsCaptor.lastValue).containsEntry("user", username).containsEntry("password", password)
     }

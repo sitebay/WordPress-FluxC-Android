@@ -1,12 +1,12 @@
 package org.wordpress.android.fluxc.annotations.endpoint;
 
 public class WPComEndpoint {
-    private static final String WPCOM_REST_PREFIX = "https://mytest.sitebay.org/api";
-    private static final String WPCOM_PREFIX_V1 = WPCOM_REST_PREFIX;
-    private static final String WPCOM_PREFIX_V1_1 = WPCOM_REST_PREFIX;
-    private static final String WPCOM_PREFIX_V1_2 = WPCOM_REST_PREFIX;
-    private static final String WPCOM_PREFIX_V1_3 = WPCOM_REST_PREFIX;
-    private static final String WPCOM_PREFIX_V0 = WPCOM_REST_PREFIX;
+    private static final String WPCOM_REST_PREFIX = "https://mytest.sitebay.org";
+    private static final String WPCOM_PREFIX_V1 = WPCOM_REST_PREFIX + "/api";
+    private static final String WPCOM_PREFIX_V1_1 = WPCOM_REST_PREFIX + "/api";
+    private static final String WPCOM_PREFIX_V1_2 = WPCOM_REST_PREFIX + "/api";
+    private static final String WPCOM_PREFIX_V1_3 = WPCOM_REST_PREFIX + "/api";
+    private static final String WPCOM_PREFIX_V0 = WPCOM_REST_PREFIX + "/api";
 
     private final String mEndpoint;
 

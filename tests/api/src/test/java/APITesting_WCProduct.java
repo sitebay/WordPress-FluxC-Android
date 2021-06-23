@@ -28,7 +28,7 @@ public class APITesting_WCProduct {
 
         RequestSpecBuilder requestBuilder = new RequestSpecBuilder().
             setBaseUri("https://mytest.sitebay.org/api").
-            setBasePath("rest/v1.1/jetpack-blogs/173063404/rest-api/").
+            setBasePath("api/jetpack-blogs/173063404/rest-api/").
             addQueryParams(pathParams).
             setAuth(oauth2(System.getenv("API_TEST_OAUTH_KEY")));
         this.mRequestSpec = requestBuilder.build();

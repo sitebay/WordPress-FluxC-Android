@@ -182,7 +182,7 @@ class ReactNativeStore
             parsePathAndParams(pathWithParams).let { (path, params) ->
                 val url = path?.let {
                     val newPath = it
-                            .replace("wp/v2".toRegex(), "wp/v2/sites/$wpComSiteId")
+                            .replace("api".toRegex(), "api/sites/$wpComSiteId")
                     slashJoin(WPCOM_ENDPOINT, newPath)
                 }
                 Pair(url, params)

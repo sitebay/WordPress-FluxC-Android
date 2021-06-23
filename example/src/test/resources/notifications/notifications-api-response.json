@@ -341,9 +341,9 @@
               "site": 153482281
             },
             "links": {
-              "comment": "https://mytest.sitebay.org/api/rest/v1/comments/2733",
-              "post": "https://mytest.sitebay.org/api/rest/v1/posts/33",
-              "site": "https://mytest.sitebay.org/api/rest/v1/sites/153482281"
+              "comment": "https://mytest.sitebay.org/api/comments/2733",
+              "post": "https://mytest.sitebay.org/api/posts/33",
+              "site": "https://mytest.sitebay.org/api/sites/153482281"
             }
           },
           "type": "comment",
@@ -380,10 +380,10 @@
           "site": 153482281
         },
         "links": {
-          "user": "https://mytest.sitebay.org/api/rest/v1/users/0",
-          "comment": "https://mytest.sitebay.org/api/rest/v1/comments/2733",
-          "post": "https://mytest.sitebay.org/api/rest/v1/posts/33",
-          "site": "https://mytest.sitebay.org/api/rest/v1/sites/153482281"
+          "user": "https://mytest.sitebay.org/api/users/0",
+          "comment": "https://mytest.sitebay.org/api/comments/2733",
+          "post": "https://mytest.sitebay.org/api/posts/33",
+          "site": "https://mytest.sitebay.org/api/sites/153482281"
         }
       },
       "title": "Product Review",

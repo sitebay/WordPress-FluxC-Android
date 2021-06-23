@@ -20,12 +20,12 @@ class ReleaseStack_ReactNativeWPComRequestTest : ReleaseStack_WPComBase() {
 
     @Test
     fun testWpComCall_leading_slash() {
-        assertSuccessWithPath("/wp/v2/media?context=edit")
+        assertSuccessWithPath("/api/media?context=edit")
     }
 
     @Test
     fun testWpComCall_no_leading_slash() {
-        assertSuccessWithPath("wp/v2/media?context=edit")
+        assertSuccessWithPath("api/media?context=edit")
     }
 
     private fun assertSuccessWithPath(path: String) {

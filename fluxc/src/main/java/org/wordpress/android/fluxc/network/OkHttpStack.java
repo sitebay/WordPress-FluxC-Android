@@ -21,6 +21,7 @@ import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
+import android.util.Log;
 
 /**
  * Modified version of https://gist.github.com/LOG-TAG/3ad1c191b3ca7eab3ea6834386e30eb9
@@ -87,6 +88,7 @@ public class OkHttpStack extends BaseHttpStack {
     public HttpResponse executeRequest(Request<?> request, Map<String, String> additionalHeaders)
             throws IOException, AuthFailureError {
         int timeoutMs = request.getTimeoutMs();
+        Log.i("MYLOG REQUEST FOR", request.getUrl());
 
         final OkHttpClient timeoutAwareClient = mOkHttpClient.newBuilder()
                                                              .connectTimeout(timeoutMs, TimeUnit.MILLISECONDS)

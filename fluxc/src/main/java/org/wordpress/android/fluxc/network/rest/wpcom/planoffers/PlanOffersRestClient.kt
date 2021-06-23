@@ -70,7 +70,14 @@ class PlanOffersRestClient @Inject constructor(
                     plan.short_name,
                     plan.tagline,
                     plan.description,
-                    plan.icon
+                    plan.icon,
+                    plan.cost_month,
+                    plan.cost_year,
+                    plan.coupon_id,
+                    plan.coupon_discount,
+                    plan.tax_code,
+                    plan.tax_rate,
+                    plan.currency,
             )
         })
     }
@@ -101,7 +108,14 @@ class PlanOffersRestClient @Inject constructor(
             val short_name: String?,
             val tagline: String?,
             val description: String?,
-            val icon: String?
+            val icon: String?,
+            val cost_month: Int?,
+            val cost_year: Int?,
+            val coupon_id: String?,
+            val coupon_discount: Int?,
+            val tax_code: String?,
+            val tax_rate: Int?,
+            val currency: String?,
         )
     }
 }

@@ -371,7 +371,7 @@ public class SelfHostedEndpointFinder {
         final String wpApiBaseUrl = mDiscoveryWPAPIRestClient.discoverWPAPIBaseURL(url);
 
         if (wpApiBaseUrl != null && !wpApiBaseUrl.isEmpty()) {
-            AppLog.i(AppLog.T.NUX, "Base WP-API URL found - verifying that the wp/v2 namespace is supported");
+            AppLog.i(AppLog.T.NUX, "Base WP-API URL found - verifying that the api namespace is supported");
             return mDiscoveryWPAPIRestClient.verifyWPAPIV2Support(wpApiBaseUrl);
         }
         return null;

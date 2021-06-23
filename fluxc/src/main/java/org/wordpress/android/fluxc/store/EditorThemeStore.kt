@@ -26,7 +26,7 @@ class EditorThemeStore
     private val coroutineEngine: CoroutineEngine,
     dispatcher: Dispatcher
 ) : Store(dispatcher) {
-    private val THEME_REQUEST_PATH = "/wp/v2/themes?status=active"
+    private val THEME_REQUEST_PATH = "/api/themes?status=active"
     private val editorThemeSqlUtils = EditorThemeSqlUtils()
 
     class FetchEditorThemePayload(val site: SiteModel) : Payload<BaseNetworkError>() {

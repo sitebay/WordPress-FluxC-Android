@@ -18,16 +18,16 @@ import java.lang.reflect.Type
  * ## GET:
  *
  * Example request:
- * https://mytest.sitebay.org/api/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://mytest.sitebay.org/api/jetpack-blogs/$siteId/rest-api/
  * ?path=%2Fwp%2Fv2%2Fposts%2F%26json%3Dtrue%26_method%3Dget&query=%7B%22status%22%3A%22draft%22%7D
  *
  * Broken down, the GET parameters are:
- * path=/wp/v2/posts/&_method=get
+ * path=/api/posts/&_method=get
  * json=true
  * query={"status":"draft"}
  *
  * The path parameter is sent HTML-encoded so that it's discernible from the other arguments by WordPress.com.
- * In this example, this would become a GET request to {JSON endpoint root}/wp/v2/posts/?status=draft.
+ * In this example, this would become a GET request to {JSON endpoint root}/api/posts/?status=draft.
  *
  * Any additional top-level params are received by the WordPress.com API, and are not sent through to the
  * WP-API endpoint (e.g. `json=true`).
@@ -35,13 +35,13 @@ import java.lang.reflect.Type
  * ## POST:
  *
  * Example request:
- * https://mytest.sitebay.org/api/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://mytest.sitebay.org/api/jetpack-blogs/$siteId/rest-api/
  *
  * Body (Form URL-Encoded):
  * path=%2Fwp%2Fv2%2Fposts%2F%26_method%3Dpost&body=%7B%22title%22%3A%22test-title%22%7D&json=true
  *
  * Broken down, the POST parameters are:
- * path=/wp/v2/posts/&_method=post
+ * path=/api/posts/&_method=post
  * body={"title":"A title"}
  * json=true
  *
@@ -49,7 +49,7 @@ import java.lang.reflect.Type
  * The body parameter is a JSON object, and contains the POST body that would be sent if the WP-API endpoint
  * were called directly.
  *
- * In this example, this would become a POST request to {JSON endpoint root}/wp/v2/posts/, with body:
+ * In this example, this would become a POST request to {JSON endpoint root}/api/posts/, with body:
  * {"title":"A title"}
  *
  * Any additional top-level arguments are received by the WordPress.com API, and are not sent through to the
@@ -66,13 +66,13 @@ import java.lang.reflect.Type
  * Any arguments intended for the WP-API endpoint are added to the `body` parameter.
  *
  * Example request:
- * https://mytest.sitebay.org/api/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://mytest.sitebay.org/api/jetpack-blogs/$siteId/rest-api/
  *
  * Body (Form URL-Encoded):
  * path=%2Fwp%2Fv2%2Fposts%2F123456%2F%26_method%3Ddelete%26&body=%7B%22force%22%3A%22true%22%7De&json=true
  *
  * Broken down, the POST parameters are:
- * path=/wp/v2/posts/123456&_method=delete
+ * path=/api/posts/123456&_method=delete
  * body={"force":"true"}
  * json=true
  *
@@ -93,7 +93,7 @@ object JetpackTunnelGsonRequest {
     /**
      * Creates a new GET request to the given WP-API endpoint, calling it via the WP.com Jetpack WP-API tunnel.
      *
-     * @param wpApiEndpoint the WP-API request endpoint (e.g. /wp/v2/posts/)
+     * @param wpApiEndpoint the WP-API request endpoint (e.g. /api/posts/)
      * @param siteId the WordPress.com site ID
      * @param params the parameters to append to the request URL
      * @param type the Type defining the expected response
@@ -128,7 +128,7 @@ object JetpackTunnelGsonRequest {
     /**
      * Creates a new POST request to the given WP-API endpoint, calling it via the WP.com Jetpack WP-API tunnel.
      *
-     * @param wpApiEndpoint the WP-API request endpoint (e.g. /wp/v2/posts/)
+     * @param wpApiEndpoint the WP-API request endpoint (e.g. /api/posts/)
      * @param siteId the WordPress.com site ID
      * @param body the request body
      * @param type the Type defining the expected response
@@ -152,7 +152,7 @@ object JetpackTunnelGsonRequest {
     /**
      * Creates a new PATCH request to the given WP-API endpoint, calling it via the WP.com Jetpack WP-API tunnel.
      *
-     * @param wpApiEndpoint the WP-API request endpoint (e.g. /wp/v2/posts/)
+     * @param wpApiEndpoint the WP-API request endpoint (e.g. /api/posts/)
      * @param siteId the WordPress.com site ID
      * @param body the request body
      * @param type the Type defining the expected response
@@ -176,7 +176,7 @@ object JetpackTunnelGsonRequest {
     /**
      * Creates a new PUT request to the given WP-API endpoint, calling it via the WP.com Jetpack WP-API tunnel.
      *
-     * @param wpApiEndpoint the WP-API request endpoint (e.g. /wp/v2/posts/)
+     * @param wpApiEndpoint the WP-API request endpoint (e.g. /api/posts/)
      * @param siteId the WordPress.com site ID
      * @param body the request body
      * @param type the Type defining the expected response
@@ -200,7 +200,7 @@ object JetpackTunnelGsonRequest {
     /**
      * Creates a new DELETE request to the given WP-API endpoint, calling it via the WP.com Jetpack WP-API tunnel.
      *
-     * @param wpApiEndpoint the WP-API request endpoint (e.g. /wp/v2/posts/)
+     * @param wpApiEndpoint the WP-API request endpoint (e.g. /api/posts/)
      * @param siteId the WordPress.com site ID
      * @param params the parameters of the request, those will be put in the tunnelled request body
      * @param type the Type defining the expected response

@@ -48,7 +48,7 @@ class JetpackTunnelGsonRequestTest {
 
     @Test
     fun testCreatePostRequest() {
-        val url = "/wp/v2/settings/"
+        val url = "/api/settings/"
 
         val requestBody = mapOf<String, Any>("title" to "New Title", "description" to "New Description")
 
@@ -65,14 +65,14 @@ class JetpackTunnelGsonRequestTest {
         val body = String(request?.body!!)
         val generatedBody = gson.fromJson(body, HashMap<String, String>()::class.java)
         assertEquals(3, generatedBody.size)
-        assertEquals("/wp/v2/settings/&_method=post", generatedBody["path"])
+        assertEquals("/api/settings/&_method=post", generatedBody["path"])
         assertEquals("true", generatedBody["json"])
         assertEquals("{\"title\":\"New Title\",\"description\":\"New Description\"}", generatedBody["body"])
     }
 
     @Test
     fun testCreatePutRequest() {
-        val url = "/wp/v2/settings/"
+        val url = "/api/settings/"
 
         val requestBody = mapOf<String, Any>("title" to "New Title", "description" to "New Description")
 
@@ -89,14 +89,14 @@ class JetpackTunnelGsonRequestTest {
         val body = String(request?.body!!)
         val generatedBody = gson.fromJson(body, HashMap<String, String>()::class.java)
         assertEquals(3, generatedBody.size)
-        assertEquals("/wp/v2/settings/&_method=put", generatedBody["path"])
+        assertEquals("/api/settings/&_method=put", generatedBody["path"])
         assertEquals("true", generatedBody["json"])
         assertEquals("{\"title\":\"New Title\",\"description\":\"New Description\"}", generatedBody["body"])
     }
 
     @Test
     fun testCreatePatchRequest() {
-        val url = "/wp/v2/settings/"
+        val url = "/api/settings/"
 
         val requestBody = mapOf<String, Any>("title" to "New Title", "description" to "New Description")
 
@@ -113,14 +113,14 @@ class JetpackTunnelGsonRequestTest {
         val body = String(request?.body!!)
         val generatedBody = gson.fromJson(body, HashMap<String, String>()::class.java)
         assertEquals(3, generatedBody.size)
-        assertEquals("/wp/v2/settings/&_method=patch", generatedBody["path"])
+        assertEquals("/api/settings/&_method=patch", generatedBody["path"])
         assertEquals("true", generatedBody["json"])
         assertEquals("{\"title\":\"New Title\",\"description\":\"New Description\"}", generatedBody["body"])
     }
 
     @Test
     fun testCreateDeleteRequest() {
-        val url = "/wp/v2/posts/6"
+        val url = "/api/posts/6"
         val params = mapOf("force" to "true")
 
         val request = JetpackTunnelGsonRequest.buildDeleteRequest(url, DUMMY_SITE_ID, params,
@@ -137,7 +137,7 @@ class JetpackTunnelGsonRequestTest {
         val generatedBody = gson.fromJson(body, HashMap<String, String>()::class.java)
         assertEquals(3, generatedBody.size)
         assertEquals("{\"force\":\"true\"}", generatedBody["body"])
-        assertEquals("/wp/v2/posts/6&_method=delete", generatedBody["path"])
+        assertEquals("/api/posts/6&_method=delete", generatedBody["path"])
         assertEquals("true", generatedBody["json"])
     }
 }

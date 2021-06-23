@@ -1,7 +1,7 @@
 package org.wordpress.android.fluxc.annotations.endpoint;
 
 public class WPAPIEndpoint {
-    private static final String WPAPI_PREFIX_V2 = "wp/v2";
+    private static final String WPAPI_PREFIX_V2 = "api";
 
     private final String mEndpoint;
 

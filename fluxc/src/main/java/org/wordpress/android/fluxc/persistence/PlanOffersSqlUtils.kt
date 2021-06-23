@@ -60,7 +60,15 @@ class PlanOffersSqlUtils @Inject constructor() {
                 shortName = this.shortName,
                 tagline = this.tagline,
                 description = this.description,
-                icon = this.iconUrl
+                icon = this.iconUrl,
+                costMonth = this.costMonth,
+                costYear = this.costYear,
+                couponId = this.couponId,
+                couponDiscount = this.couponDiscount!!,
+                taxCode = this.taxCode,
+                taxRate = this.taxRate,
+                currency = this.currency
+
         )
     }
 
@@ -113,10 +121,17 @@ class PlanOffersSqlUtils @Inject constructor() {
         @Column var shortName: String? = null,
         @Column var tagline: String? = null,
         @Column var description: String? = null,
-        @Column var icon: String? = null
+        @Column var icon: String? = null,
+        @Column var costMonth: Int? = null,
+        @Column var costYear: Int? = null,
+        @Column var couponId: String? = null,
+        @Column var couponDiscount: Int = 0,
+        @Column var taxCode: String? = null,
+        @Column var taxRate: Int? = 0,
+        @Column var currency: String? = null
     ) : Identifiable {
         fun build(planIds: List<Int>, planFeatures: List<Feature>): PlanOffersModel {
-            return PlanOffersModel(planIds, planFeatures, name, shortName, tagline, description, icon)
+            return PlanOffersModel(planIds, planFeatures, name, shortName, tagline, description, icon, costMonth, costYear, couponId, couponDiscount, taxCode, taxRate, currency)
         }
 
         override fun getId(): Int {

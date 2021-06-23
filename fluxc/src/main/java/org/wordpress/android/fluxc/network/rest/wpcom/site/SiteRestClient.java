@@ -39,6 +39,7 @@ import org.wordpress.android.fluxc.network.rest.wpcom.auth.AppSecrets;
 import org.wordpress.android.fluxc.network.rest.wpcom.site.AutomatedTransferEligibilityCheckResponse.EligibilityError;
 import org.wordpress.android.fluxc.network.rest.wpcom.site.SiteWPComRestResponse.SitesResponse;
 import org.wordpress.android.fluxc.network.rest.wpcom.site.UserRoleWPComRestResponse.UserRolesResponse;
+import org.wordpress.android.fluxc.store.SiteStore;
 import org.wordpress.android.fluxc.store.SiteStore.AccessCookieErrorType;
 import org.wordpress.android.fluxc.store.SiteStore.AutomatedTransferEligibilityResponsePayload;
 import org.wordpress.android.fluxc.store.SiteStore.AutomatedTransferError;
@@ -109,6 +110,7 @@ import java.util.Map;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
+import org.wordpress.android.fluxc.store.SiteStore.FetchSitesPayload;
 
 @Singleton
 public class SiteRestClient extends BaseWPComRestClient {
@@ -121,6 +123,7 @@ public class SiteRestClient extends BaseWPComRestClient {
     private final AppSecrets mAppSecrets;
 
     public static class NewSiteResponsePayload extends Payload<NewSiteError> {
+
         public NewSiteResponsePayload() {}
         public long newSiteRemoteId;
         public boolean dryRun;
@@ -238,24 +241,25 @@ public class SiteRestClient extends BaseWPComRestClient {
         add(request);
     }
 
-    public void newSite(@NonNull String siteName,
+    public void newSite(@NonNull final String siteName,
                         @NonNull String language,
                         @NonNull SiteVisibility visibility, @Nullable Long segmentId, @Nullable String siteDesign,
-                        @NonNull String wpBlogName,
+                        @NonNull final String wpBlogName,
                         @NonNull String wpEmail,
-                        @NonNull String wpUsername,
-                        @NonNull String wpPassword,
+                        @NonNull final String wpUsername,
+                        @NonNull final String wpPassword,
                         @NonNull String wpFirstName,
                         @NonNull String wpLastName,
                         final boolean dryRun) {
         String url = WPCOMREST.sites.new_.getUrlV1_1();
         Map<String, Object> body = new HashMap<>();
-        body.put("blog_name", siteName);
+        body.put("live-domain", siteName);
+        body.put("wp-blog-name", wpBlogName);
+        body.put("wp-first-name", wpFirstName);
+        body.put("wp-last-name", wpLastName);
         body.put("wp-email", wpEmail);
         body.put("wp-username", wpUsername);
         body.put("wp-password", wpPassword);
-        body.put("wp-first-name", wpFirstName);
-        body.put("wp-last-name", wpLastName);
         body.put("lang_id", language);
         body.put("public", String.valueOf(visibility.value()));
         body.put("validate", dryRun ? "1" : "0");
@@ -290,6 +294,8 @@ public class SiteRestClient extends BaseWPComRestClient {
                             }
                         }
                         payload.newSiteRemoteId = siteId;
+                        // ADDED Fetch sites
+                        //mDispatcher.dispatch(SiteActionBuilder.newFetchSitesAction(new FetchSitesPayload()));
                         mDispatcher.dispatch(SiteActionBuilder.newCreatedNewSiteAction(payload));
                     }
                 },
