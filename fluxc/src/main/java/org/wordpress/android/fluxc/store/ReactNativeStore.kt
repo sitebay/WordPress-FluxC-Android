@@ -55,7 +55,7 @@ class ReactNativeStore
             mutableMapOf()
     )
 
-    private val WPCOM_ENDPOINT = "https://public-api.wordpress.com"
+    private val WPCOM_ENDPOINT = "https://mytest.sitebay.org/api"
 
     suspend fun executeRequest(
         site: SiteModel,

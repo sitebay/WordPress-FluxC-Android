@@ -24,7 +24,7 @@ public class APITesting_WCGateway {
         pathParams.put("status", "any");
 
         RequestSpecBuilder requestBuilder = new RequestSpecBuilder().
-            setBaseUri("https://public-api.wordpress.com").
+            setBaseUri("https://mytest.sitebay.org/api").
             setBasePath("rest/v1.1/jetpack-blogs/173063404/rest-api/").
             addQueryParams(pathParams).
             setAuth(oauth2(System.getenv("API_TEST_OAUTH_KEY")));

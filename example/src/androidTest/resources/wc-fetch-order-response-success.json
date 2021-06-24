@@ -110,12 +110,12 @@
     "_links": {
       "self": [
         {
-          "href": "https:\/\/wordpress.com\/wp-json\/wc\/v2\/orders\/88"
+          "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v2\/orders\/88"
         }
       ],
       "collection": [
         {
-          "href": "https:\/\/wordpress.com\/wp-json\/wc\/v2\/orders"
+          "href": "https:\/\/mytest.sitebay.org\/wp-json\/wc\/v2\/orders"
         }
       ]
     }

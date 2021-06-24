@@ -28,21 +28,21 @@ public class WPUrlUtils {
     }
 
     public static boolean isWordPressCom(String url) {
-        return UrlUtils.getHost(url).endsWith(".wordpress.com") || UrlUtils.getHost(url).equals("wordpress.com");
+        return UrlUtils.getHost(url).endsWith(".sitebay.ca") || UrlUtils.getHost(url).equals("sitebay.ca");
     }
 
     public static boolean isWordPressCom(URL url) {
         if (url == null) {
             return false;
         }
-        return url.getHost().endsWith(".wordpress.com") || url.getHost().equals("wordpress.com");
+        return url.getHost().endsWith(".sitebay.ca") || url.getHost().equals("sitebay.ca");
     }
 
     public static boolean isWordPressCom(URI uri) {
         if (uri == null || uri.getHost() == null) {
             return false;
         }
-        return uri.getHost().endsWith(".wordpress.com") || uri.getHost().equals("wordpress.com");
+        return uri.getHost().endsWith(".mytest.sitebay.org") || uri.getHost().equals("mytest.sitebay.org");
     }
 
     public static boolean isGravatar(URL url) {

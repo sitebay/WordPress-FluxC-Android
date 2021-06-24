@@ -168,7 +168,7 @@ public class SitesFragment extends Fragment {
 
     private void newSiteAction(String name) {
         // Default language "en" (english)
-        NewSitePayload newSitePayload = new NewSitePayload(name, "en", SiteVisibility.PUBLIC, true);
+        NewSitePayload newSitePayload = new NewSitePayload(name, "en", SiteVisibility.PUBLIC, null, null, null, null, null, null, true);
         mDispatcher.dispatch(SiteActionBuilder.newCreateNewSiteAction(newSitePayload));
     }
 

@@ -104,7 +104,7 @@ public class ThemeRestClient extends BaseWPComRestClient {
 
     /**
      * Endpoint: v1.1/sites/$siteId/themes/mine
-     * @see <a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/themes/mine/">Documentation</a>
+     * @see <a href="https://developer.mytest.sitebay.org/docs/api/1.1/get/sites/%24site/themes/mine/">Documentation</a>
      */
     public void activateTheme(@NonNull final SiteModel site, @NonNull final ThemeModel theme) {
         String url = WPCOMREST.sites.site(site.getSiteId()).themes.mine.getUrlV1_1();
@@ -133,7 +133,7 @@ public class ThemeRestClient extends BaseWPComRestClient {
 
     /**
      * [Undocumented!] Endpoint: v1.2/themes
-     * @see <a href="https://developer.wordpress.com/docs/api/1.1/get/themes/">Previous version</a>
+     * @see <a href="https://developer.mytest.sitebay.org/docs/api/1.1/get/themes/">Previous version</a>
      */
     public void fetchWpComThemes() {
         String url = WPCOMREST.themes.getUrlV1_2() + "?" + WP_THEME_FETCH_NUMBER_PARAM;
@@ -198,7 +198,7 @@ public class ThemeRestClient extends BaseWPComRestClient {
 
     /**
      * [Undocumented!] Endpoint: v1/sites/$siteId/themes
-     * @see <a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/themes/">Similar endpoint</a>
+     * @see <a href="https://developer.mytest.sitebay.org/docs/api/1.1/get/sites/%24site/themes/">Similar endpoint</a>
      */
     public void fetchJetpackInstalledThemes(@NonNull final SiteModel site) {
         String url = WPCOMREST.sites.site(site.getSiteId()).themes.getUrlV1();
@@ -224,7 +224,7 @@ public class ThemeRestClient extends BaseWPComRestClient {
 
     /**
      * Endpoint: v1.1/sites/$siteId/themes/mine; same endpoint for both Jetpack and WP.com sites!
-     * @see <a href="https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/themes/mine/">Documentation</a>
+     * @see <a href="https://developer.mytest.sitebay.org/docs/api/1.1/get/sites/%24site/themes/mine/">Documentation</a>
      */
     public void fetchCurrentTheme(@NonNull final SiteModel site) {
         String url = WPCOMREST.sites.site(site.getSiteId()).themes.mine.getUrlV1_1();
@@ -333,7 +333,7 @@ public class ThemeRestClient extends BaseWPComRestClient {
 
     /**
      * Must provide theme slug with -wpcom suffix to install a WP.com theme on a Jetpack site.
-     * Per documentation in the developer console: https://developer.wordpress.com/docs/api/console/
+     * Per documentation in the developer console: https://developer.mytest.sitebay.org/docs/api/console/
      */
     private @NonNull String getThemeIdWithWpComSuffix(ThemeModel theme) {
         if (theme == null || theme.getThemeId() == null) {

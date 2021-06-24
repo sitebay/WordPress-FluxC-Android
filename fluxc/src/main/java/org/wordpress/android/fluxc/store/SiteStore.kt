@@ -141,14 +141,37 @@ class SiteStore
         @JvmField val visibility: SiteVisibility,
         @JvmField val segmentId: Long? = null,
         @JvmField val siteDesign: String? = null,
+        @JvmField val wpBlogName: String,
+        @JvmField val wpFirstName: String,
+        @JvmField val wpLastName: String,
+        @JvmField val wpEmail: String,
+        @JvmField val wpUsername: String,
+        @JvmField val wpPassword: String,
         @JvmField val dryRun: Boolean
     ) : Payload<BaseNetworkError>() {
-        constructor(siteName: String, language: String, visibility: SiteVisibility, dryRun: Boolean) : this(
+        constructor(
+            siteName: String,
+            language: String,
+            visibility: SiteVisibility,
+            wpBlogName: String,
+            wpFirstName: String,
+            wpLastName: String,
+            wpEmail: String,
+            wpUsername: String,
+            wpPassword: String,
+            dryRun: Boolean
+        ) : this(
                 siteName,
                 language,
                 visibility,
                 null,
                 null,
+                wpBlogName,
+                wpFirstName,
+                wpLastName,
+                wpEmail,
+                wpUsername,
+                wpPassword,
                 dryRun
         )
 
@@ -157,8 +180,27 @@ class SiteStore
             language: String,
             visibility: SiteVisibility,
             segmentId: Long?,
+            wpBlogName: String,
+            wpFirstName: String,
+            wpLastName: String,
+            wpEmail: String,
+            wpUsername: String,
+            wpPassword: String,
             dryRun: Boolean
-        ) : this(siteName, language, visibility, segmentId, null, dryRun)
+        ) : this(
+                siteName,
+                language,
+                visibility,
+                segmentId,
+                null,
+                wpBlogName,
+                wpFirstName,
+                wpLastName,
+                wpEmail,
+                wpUsername,
+                wpPassword,
+                dryRun
+        )
     }
 
     data class FetchedPostFormatsPayload(
@@ -1412,7 +1454,7 @@ class SiteStore
     suspend fun createNewSite(payload: NewSitePayload): OnNewSiteCreated {
         val result = siteRestClient.newSite(
                 payload.siteName, payload.language, payload.visibility,
-                payload.segmentId, payload.siteDesign, payload.dryRun
+                payload.segmentId, payload.siteDesign, payload.wpBlogName, payload.wpFirstName, payload.wpLastName, payload.wpEmail, payload.wpUsername, payload.wpPassword, payload.dryRun
         )
         return handleCreateNewSiteCompleted(
                 payload = result

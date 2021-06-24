@@ -142,7 +142,7 @@ class ReleaseStack_TimeStatsTestJetpack : ReleaseStack_Base() {
 
         runBlocking {
             // Retrieving the first domain in the referrer list
-            val domain = "https://wordpress.com/read/"
+            val domain = "https://mytest.sitebay.org/read/"
 
             // Always unreport first so report doesn't cause an already-spammed error
             referrersStore.unreportReferrerAsSpam(

@@ -12,7 +12,7 @@ import kotlin.test.assertTrue
 @RunWith(MockitoJUnitRunner::class)
 class FormattableContentMapperTest {
     private lateinit var formattableContentMapper: FormattableContentMapper
-    private val url = "https://www.wordpress.com"
+    private val url = "https://www.mytest.sitebay.org"
 
     @Before
     fun setUp() {
@@ -34,7 +34,7 @@ class FormattableContentMapperTest {
         with(formattableContent.ranges!![1]) {
             assertEquals(FormattableRangeType.SITE, this.rangeType())
             assertEquals(123, this.id)
-            assertEquals("http://mysite.wordpress.com", this.url)
+            assertEquals("http://mysite.mytest.sitebay.org", this.url)
             assertEquals(listOf(28, 35), this.indices)
         }
     }

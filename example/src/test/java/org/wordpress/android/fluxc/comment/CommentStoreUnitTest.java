@@ -235,7 +235,7 @@ public class CommentStoreUnitTest {
         commentModel.setRemoteCommentId(remoteId);
         commentModel.setStatus(status.toString());
         commentModel.setDatePublished(DateTimeUtils.iso8601FromTimestamp(new Random().nextInt()));
-        commentModel.setUrl("https://www.wordpress.com");
+        commentModel.setUrl("https://www.mytest.sitebay.org");
         CommentSqlUtils.insertOrUpdateComment(commentModel);
     }
 

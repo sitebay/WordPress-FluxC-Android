@@ -98,7 +98,7 @@ class OrderStatsRestClient @Inject constructor(
     private val STATS_DEFAULT_ORDER = "asc"
 
     /**
-     * Makes a GET call to `/wpcom/v2/sites/$site/data/orders/`, retrieving data for the given
+     * Makes a GET call to `/api/sites/$site/data/orders/`, retrieving data for the given
      * WooCommerce [SiteModel].
      *
      * @param[site] the site to fetch order data for

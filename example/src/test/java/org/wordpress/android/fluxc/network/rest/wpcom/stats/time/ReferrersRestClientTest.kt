@@ -119,7 +119,7 @@ class ReferrersRestClientTest {
     fun `maps group with views`() {
         val group = "{\"group\":\"WordPress.com Reader\"," +
                 "\"name\":\"WordPress.com Reader\"," +
-                "\"url\":\"https:\\/\\/wordpress.com\\/\"," +
+                "\"url\":\"https:\\/\\/mytest.sitebay.org\\/\"," +
                 "\"icon\":\"https:\\/\\/secure.gravatar.com\\/blavatar\\/236c008da9dc0edb4b3464ecebb3fc1d?s=48\"," +
                 "\"total\":16," +
                 "\"follow_data\":null," +
@@ -181,7 +181,7 @@ class ReferrersRestClientTest {
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(ReferrersResponse(null, null, null, emptyList()))
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/referrers/")
+                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/12/stats/referrers/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "max" to pageSize.toString(),
@@ -221,7 +221,7 @@ class ReferrersRestClientTest {
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/referrers/spam/new/")
+                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/12/stats/referrers/spam/new/")
     }
 
     @Test
@@ -257,7 +257,7 @@ class ReferrersRestClientTest {
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
                 .isEqualTo(
-                        "https://public-api.wordpress.com/rest/v1.1/sites/12/stats/referrers/spam/delete/"
+                        "https://mytest.sitebay.org/api/rest/v1.1/sites/12/stats/referrers/spam/delete/"
                 )
     }
 

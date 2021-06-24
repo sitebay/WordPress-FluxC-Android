@@ -121,7 +121,7 @@ class NotificationSqlUtilsTest {
         assertEquals(note.subtype, NotificationModel.Subkind.UNKNOWN)
         assertEquals(note.timestamp, "2018-10-22T21:08:11+00:00")
         assertEquals(note.icon, "https://s.wp.com/wp-content/mu-plugins/notes/images/update-payment-2x.png")
-        assertEquals(note.url, "https://wordpress.com/store/order/droidtester2018.shop/88")
+        assertEquals(note.url, "https://mytest.sitebay.org/store/order/droidtester2018.shop/88")
         assertNotNull(note.subject)
         note.subject?.let {
             assertEquals(it[0].text, "\ud83c\udf89 You have a new order!")
@@ -169,8 +169,8 @@ class NotificationSqlUtilsTest {
 
             // verify links
             assertNotNull(links)
-            assertEquals(links!!.site, "https://public-api.wordpress.com/rest/v1/sites/141286411")
-            assertEquals(links!!.order, "https://public-api.wordpress.com/rest/v1/orders/88")
+            assertEquals(links!!.site, "https://mytest.sitebay.org/api/rest/v1/sites/141286411")
+            assertEquals(links!!.order, "https://mytest.sitebay.org/api/rest/v1/orders/88")
         }
     }
 

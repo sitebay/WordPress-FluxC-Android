@@ -2,6 +2,7 @@ package org.wordpress.android.fluxc.network.rest.wpcom.site
 
 import android.content.Context
 import android.text.TextUtils
+import android.util.Log
 import com.android.volley.DefaultRetryPolicy
 import com.android.volley.RequestQueue
 import com.android.volley.VolleyError
@@ -181,11 +182,24 @@ class SiteRestClient @Inject constructor(
         visibility: SiteVisibility,
         segmentId: Long?,
         siteDesign: String?,
+        wpBlogName: String,
+        wpFirstName: String,
+        wpLastName: String,
+        wpEmail: String,
+        wpUsername: String,
+        wpPassword: String,
         dryRun: Boolean
     ): NewSiteResponsePayload {
         val url = WPCOMREST.sites.new_.urlV1_1
         val body = mutableMapOf<String, Any>()
-        body["blog_name"] = siteName
+        body["live-domain"] = siteName
+        body["wp-blog-name"] = wpBlogName
+        body["wp-first-name"] = wpFirstName
+        body["wp-last-name"] = wpLastName
+        body["wp-email"] = wpEmail
+        body["wp-username"] = wpUsername
+        body["wp-password"] = wpPassword
+
         body["lang_id"] = language
         body["public"] = visibility.value().toString()
         body["validate"] = if (dryRun) "1" else "0"
@@ -541,9 +555,10 @@ class SiteRestClient @Inject constructor(
     //
     fun fetchConnectSiteInfo(siteUrl: String) {
         // Get a proper URI to reliably retrieve the scheme.
+        Log.i("MYLOG", siteUrl)
         val uri: URI = try {
             URI.create(UrlUtils.addUrlSchemeIfNeeded(siteUrl, false))
-        } catch (e: IllegalArgumentException) {
+        } catch (e: Exception) {
             val siteError = SiteError(INVALID_SITE)
             val payload = ConnectSiteInfoPayload(siteUrl, siteError)
             mDispatcher.dispatch(SiteActionBuilder.newFetchedConnectSiteInfoAction(payload))

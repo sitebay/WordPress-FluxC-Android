@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/wordpress-mobile/WordPress-FluxC-Android.svg?style=svg)](https://circleci.com/gh/wordpress-mobile/WordPress-FluxC-Android)
 
-WordPress-FluxC-Android is a networking and persistence library that helps to connect and sync data from a WordPress site (self hosted, or wordpress.com site).
+WordPress-FluxC-Android is a networking and persistence library that helps to connect and sync data from a WordPress site (self hosted, or mytest.sitebay.org site).
 
 Based on the [Flux][1] pattern, we're using: [Dagger2][2] for dependency injection, [WellSql][3] for persistence.
 
@@ -121,4 +121,4 @@ WordPress-FluxC-Android is an Open Source project covered by the [GNU General Pu
 [4]: https://github.com/wordpress-mobile/WordPress-FluxC-Android/blob/ba9dd84c54b12d53e01dfdb8efb4a18ed8343311/fluxc/src/main/java/org/wordpress/android/fluxc/store/SiteStore.java
 [5]: https://github.com/wordpress-mobile/WordPress-FluxC-Android/blob/ba9dd84c54b12d53e01dfdb8efb4a18ed8343311/fluxc/src/main/java/org/wordpress/android/fluxc/action/SiteAction.java
 [6]: https://make.wordpress.org/chat/
-[7]: https://developer.wordpress.com/apps/
+[7]: https://developer.mytest.sitebay.org/apps/

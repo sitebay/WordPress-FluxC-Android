@@ -93,7 +93,7 @@ class SiteXMLRPCClientTest {
   
   <member><name>login_url</name><value><struct>
   <member><name>value</name><value>
-  <string>https://taliwutblog.wordpress.com/wp-login.php</string>
+  <string>https://taliwutblog.mytest.sitebay.org/wp-login.php</string>
   </value></member></struct></value></member>
   
   <member><name>blog_public</name><value><struct>
@@ -107,7 +107,7 @@ class SiteXMLRPCClientTest {
   <member><name>admin_url</name><value><struct>
   <member><name>readonly</name><value><boolean>1</boolean></value></member>
   <member><name>value</name><value>
-  <string>https://taliwutblog.wordpress.com/wp-admin/</string>
+  <string>https://taliwutblog.mytest.sitebay.org/wp-admin/</string>
   </value></member></struct></value></member>
   
   <member><name>software_version</name><value><struct>
@@ -119,7 +119,7 @@ class SiteXMLRPCClientTest {
   </value></member>
   
   <member><name>home_url</name><value><struct>
-  <member><name>value</name><value><string>http://taliwutblog.wordpress.com</string>
+  <member><name>value</name><value><string>http://taliwutblog.mytest.sitebay.org</string>
   </value></member></struct></value></member>
   </struct>
 </value></param></params></methodResponse>"""

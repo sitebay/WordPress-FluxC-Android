@@ -24,7 +24,7 @@ import org.wordpress.android.util.LanguageUtils;
 import okhttp3.HttpUrl;
 
 public abstract class BaseWPComRestClient {
-    private static final String WPCOM_V2_PREFIX = "/wpcom/v2";
+    private static final String WPCOM_V2_PREFIX = "/api";
     private static final String LOCALE_PARAM_NAME_FOR_V1 = "locale";
     private static final String LOCALE_PARAM_NAME_FOR_V2 = "_locale";
 

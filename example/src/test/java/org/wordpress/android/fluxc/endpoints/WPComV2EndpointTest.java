@@ -15,7 +15,7 @@ public class WPComV2EndpointTest {
 
     @Test
     public void testUrls() {
-        assertEquals("https://public-api.wordpress.com/wpcom/v2/users/username/suggestions/",
+        assertEquals("https://mytest.sitebay.org/api/api/users/username/suggestions/",
                 WPCOMV2.users.username.suggestions.getUrl());
     }
 }
