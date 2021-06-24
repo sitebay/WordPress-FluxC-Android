@@ -76,7 +76,7 @@ public class WPComEndpointTest {
     @Test
     public void testUrls() {
         assertEquals("https://mytest.sitebay.org/api/rest/v1/sites/", WPCOMREST.sites.getUrlV1());
-        assertEquals("https://mytest.sitebay.org/api/rest/v1.1/sites/", WPCOMREST.sites.getUrlV1_1());
+        assertEquals("https://mytest.sitebay.org/api/api/sites/", WPCOMREST.sites.getUrlV1_1());
         assertEquals("https://mytest.sitebay.org/api/rest/v1.2/sites/", WPCOMREST.sites.getUrlV1_2());
         assertEquals("https://mytest.sitebay.org/api/rest/v1.3/sites/", WPCOMREST.sites.getUrlV1_3());
         assertEquals("https://mytest.sitebay.org/api/is-available/email/", WPCOMREST.is_available.email.getUrlV0());

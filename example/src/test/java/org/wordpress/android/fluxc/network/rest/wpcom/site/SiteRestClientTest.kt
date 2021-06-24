@@ -80,7 +80,7 @@ class SiteRestClientTest {
         assertThat(responseModel.name).isEqualTo(name)
         assertThat(responseModel.siteId).isEqualTo(siteId)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/12")
+                .isEqualTo("https://mytest.sitebay.org/api/api/sites/12")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "fields" to "ID,URL,name,description,jetpack," +
@@ -182,7 +182,7 @@ class SiteRestClientTest {
         assertThat(result.dryRun).isEqualTo(dryRun)
 
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/new/")
+                .isEqualTo("https://mytest.sitebay.org/api/api/sites/new/")
         assertThat(bodyCaptor.lastValue).isEqualTo(
                 mapOf(
                         "blog_name" to siteName,
@@ -220,7 +220,7 @@ class SiteRestClientTest {
         assertThat(result.dryRun).isEqualTo(dryRun)
 
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/new/")
+                .isEqualTo("https://mytest.sitebay.org/api/api/sites/new/")
         assertThat(bodyCaptor.lastValue).isEqualTo(
                 mapOf(
                         "blog_name" to siteName,
@@ -247,7 +247,7 @@ class SiteRestClientTest {
         assertThat(responseModel.postFormats[0].slug).isEqualTo(slug)
         assertThat(responseModel.postFormats[0].displayName).isEqualTo(displayName)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://mytest.sitebay.org/api/rest/v1.1/sites/12/post-formats/")
+                .isEqualTo("https://mytest.sitebay.org/api/api/sites/12/post-formats/")
     }
 
     @Test

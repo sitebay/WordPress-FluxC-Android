@@ -183,7 +183,8 @@ public class SiteModel extends Payload<BaseNetworkError> implements Identifiable
     }
 
     public boolean isWPCom() {
-        return mIsWPCom;
+        return false
+        //return mIsWPCom;
     }
 
     public void setIsWPCom(boolean wpCom) {

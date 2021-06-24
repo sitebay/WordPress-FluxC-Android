@@ -180,7 +180,7 @@ class ExperimentRestClientTest {
     }
 
     companion object {
-        const val EXPERIMENTS_ENDPOINT = "https://mytest.sitebay.org/api/api/experiments"
+        const val EXPERIMENTS_ENDPOINT = "https://mytest.sitebay.org/api/experiments"
 
         val defaultPlatform = CALYPSO
 
