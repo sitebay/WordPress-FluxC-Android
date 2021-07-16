@@ -5,7 +5,7 @@
               android:orientation="vertical"
     tools:ignore="HardcodedText"
     android:layout_margin="@dimen/activity_start_end_margin"
-              tools:context="org.wordpress.android.fluxc.example.CommentsFragment">
+              tools:context="org.sitebay.android.fluxc.example.CommentsFragment">
 
     <Button
         android:id="@+id/new_account"

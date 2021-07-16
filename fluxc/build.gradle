@@ -65,7 +65,7 @@ dependencies {
     implementation "androidx.exifinterface:exifinterface:1.0.0"
 
     // WordPress libs
-    implementation('org.wordpress:utils:1.30.3-beta.1') {
+    implementation('com.github.sitebay:WordPress-Utils-Android:1.40.5') {
         // Using official volley package
         exclude group: "com.mcxiaoke.volley"
         exclude group: "com.android.support"
@@ -106,4 +106,4 @@ dependencies {
 }
 
 version = android.defaultConfig.versionName
-group = "org.wordpress"
+group = "org.sitebay"

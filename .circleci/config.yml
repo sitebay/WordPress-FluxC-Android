@@ -137,7 +137,7 @@ workflows:
       - Firebase Test:
           name: Mocked Connected Tests
           results-history-name: CircleCI FluxC Mocked Tests
-          package: org.wordpress.android.fluxc.mocked
+          package: org.sitebay.android.fluxc.mocked
           device: model=Nexus5X,version=26,locale=en,orientation=portrait
           timeout: 10m
           num-flaky-test-attempts: 0
@@ -153,7 +153,7 @@ workflows:
           requires: [Optional Tests]
           name: Optional Connected Tests
           results-history-name: CircleCI FluxC Optional Connected Tests
-          package: org.wordpress.android.fluxc
+          package: org.sitebay.android.fluxc
           device: model=Nexus5X,version=26,locale=en,orientation=portrait
           timeout: 30m
           num-flaky-test-attempts: 1
@@ -170,7 +170,7 @@ workflows:
       - Firebase Test:
           name: Connected Tests
           results-history-name: CircleCI FluxC Tests
-          package: org.wordpress.android.fluxc
+          package: org.sitebay.android.fluxc
           device: model=Nexus5X,version=26,locale=en,orientation=portrait
           timeout: 30m
           num-flaky-test-attempts: 1

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_start_end_margin"
-    tools:context="org.wordpress.android.fluxc.example.ui.shippinglabels.WooShippingLabelFragment"
+    tools:context="org.sitebay.android.fluxc.example.ui.shippinglabels.WooShippingLabelFragment"
     tools:ignore="HardcodedText">
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             app:textHint="Name" />
 
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,14 +29,14 @@
             app:textHint="Company" />
 
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:textHint="Phone" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_address1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,35 +44,35 @@
             app:textHint="Address" />
 
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_address2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:textHint="Address 2" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:textHint="City" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:textHint="State" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_zip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:textHint="ZIP Code" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/address_country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

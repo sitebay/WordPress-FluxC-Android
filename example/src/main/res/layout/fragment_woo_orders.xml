@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_start_end_margin"
     tools:ignore="HardcodedText"
-    tools:context="org.wordpress.android.fluxc.example.ui.orders.WooOrdersFragment">
+    tools:context="org.sitebay.android.fluxc.example.ui.orders.WooOrdersFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

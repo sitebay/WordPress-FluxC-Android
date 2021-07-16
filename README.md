@@ -33,15 +33,15 @@ our example:
     $ ./gradlew testDebug # Unit tests
 
 Note: this uses the default `example/properties/api.properties` file. You'll have to get
-a [WordPress.com OAuth2 ID and secret](#oauth2-authentication).
+a [SiteBay.org OAuth2 ID and secret](#oauth2-authentication).
 
 We have some tests connecting to real HTTP servers, URL and credentials are defined in `example/properties/tests.properties`, you must edit it or obtain the real file to run the tests.
 
-Please note that, unless using special credentials which cannot be shared publicly, some of the WordPress.com connected tests will not pass unless the OAuth2 ID and secret are registered to the account that the test is attempting to log into.
+Please note that, unless using special credentials which cannot be shared publicly, some of the SiteBay.org connected tests will not pass unless the OAuth2 ID and secret are registered to the account that the test is attempting to log into.
 
 ## OAuth2 Authentication
 
-To test with your own OAuth2 ID and Secret you will need to create an application or view the details for your existing application with our [WordPress.com applications manager][7].
+To test with your own OAuth2 ID and Secret you will need to create an application or view the details for your existing application with our [SiteBay.org applications manager][7].
 
 When creating your application, you should select "Native client" for the application type. The applications manager currently requires a "redirect URL", but this isn't used for mobile apps. Just use "https://localhost".
 
@@ -87,12 +87,12 @@ Endpoints for each of the supported APIs are centralized in a generated endpoint
 
 To add a new endpoint, first add it to the appropriate `fluxc-processor/src/main/resources/*.txt` file, and then rebuild the project to update the generated (Java) endpoint file.
 
-Note that, for WordPress.com REST API endpoints, the final endpoint will be normalized to include a trailing slash.
+Note that, for SiteBay.org REST API endpoints, the final endpoint will be normalized to include a trailing slash.
 
 
 #### Response Models
 
-Create a class implementing `Response` interface in a corresponding package in `org.wordpress.android.fluxc.network.rest` tree.
+Create a class implementing `Response` interface in a corresponding package in `org.sitebay.android.fluxc.network.rest` tree.
 
 Prefer using nullable types in response models to prevent crashes when the API changes. Map nullable types to non-nullable types (if applicable) when mapping response models to domain models.
 
@@ -118,7 +118,7 @@ WordPress-FluxC-Android is an Open Source project covered by the [GNU General Pu
 [1]: https://facebook.github.io/flux/docs/overview/
 [2]: https://google.github.io/dagger/
 [3]: https://github.com/yarolegovich/wellsql
-[4]: https://github.com/wordpress-mobile/WordPress-FluxC-Android/blob/ba9dd84c54b12d53e01dfdb8efb4a18ed8343311/fluxc/src/main/java/org/wordpress/android/fluxc/store/SiteStore.java
-[5]: https://github.com/wordpress-mobile/WordPress-FluxC-Android/blob/ba9dd84c54b12d53e01dfdb8efb4a18ed8343311/fluxc/src/main/java/org/wordpress/android/fluxc/action/SiteAction.java
-[6]: https://make.wordpress.org/chat/
+[4]: https://github.com/wordpress-mobile/WordPress-FluxC-Android/blob/ba9dd84c54b12d53e01dfdb8efb4a18ed8343311/fluxc/src/main/java/org/sitebay/android/fluxc/store/SiteStore.java
+[5]: https://github.com/wordpress-mobile/WordPress-FluxC-Android/blob/ba9dd84c54b12d53e01dfdb8efb4a18ed8343311/fluxc/src/main/java/org/sitebay/android/fluxc/action/SiteAction.java
+[6]: https://make.sitebay.org/chat/
 [7]: https://developer.mytest.sitebay.org/apps/

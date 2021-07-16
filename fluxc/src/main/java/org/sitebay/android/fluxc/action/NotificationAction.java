@@ -1,0 +1,55 @@
+package org.sitebay.android.fluxc.action;
+
+import org.sitebay.android.fluxc.annotations.Action;
+import org.sitebay.android.fluxc.annotations.ActionEnum;
+import org.sitebay.android.fluxc.annotations.action.IAction;
+import org.sitebay.android.fluxc.model.notification.NotificationModel;
+import org.sitebay.android.fluxc.store.NotificationStore.FetchNotificationHashesResponsePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.FetchNotificationPayload;
+import org.sitebay.android.fluxc.store.NotificationStore.FetchNotificationResponsePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.FetchNotificationsPayload;
+import org.sitebay.android.fluxc.store.NotificationStore.FetchNotificationsResponsePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.MarkNotificationSeenResponsePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.MarkNotificationsReadPayload;
+import org.sitebay.android.fluxc.store.NotificationStore.MarkNotificationsReadResponsePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.MarkNotificationsSeenPayload;
+import org.sitebay.android.fluxc.store.NotificationStore.RegisterDevicePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.RegisterDeviceResponsePayload;
+import org.sitebay.android.fluxc.store.NotificationStore.UnregisterDeviceResponsePayload;
+
+@ActionEnum
+public enum NotificationAction implements IAction {
+    // Remote actions
+    @Action(payloadType = RegisterDevicePayload.class)
+    REGISTER_DEVICE, // Register device for push notifications with SiteBay.org
+    @Action
+    UNREGISTER_DEVICE, // Unregister device for push notifications with SiteBay.org
+    @Action(payloadType = FetchNotificationsPayload.class)
+    FETCH_NOTIFICATIONS, // Fetch notifications
+    @Action(payloadType = FetchNotificationPayload.class)
+    FETCH_NOTIFICATION, // Fetch a single notification
+    @Action(payloadType = MarkNotificationsSeenPayload.class)
+    MARK_NOTIFICATIONS_SEEN, // Submit the time notifications were last seen
+    @Action(payloadType = MarkNotificationsReadPayload.class)
+    MARK_NOTIFICATIONS_READ, // Mark one or more notifications as read by user
+
+    // Remote responses
+    @Action(payloadType = RegisterDeviceResponsePayload.class)
+    REGISTERED_DEVICE, // Response to device registration received
+    @Action(payloadType = UnregisterDeviceResponsePayload.class)
+    UNREGISTERED_DEVICE, // Response to device unregistration
+    @Action(payloadType = FetchNotificationHashesResponsePayload.class)
+    FETCHED_NOTIFICATION_HASHES, // Response to an internal request to fetch notification hashes for synchronization
+    @Action(payloadType = FetchNotificationsResponsePayload.class)
+    FETCHED_NOTIFICATIONS, // Response to fetching notifications
+    @Action(payloadType = FetchNotificationResponsePayload.class)
+    FETCHED_NOTIFICATION, // Response to fetching a single notification
+    @Action(payloadType = MarkNotificationSeenResponsePayload.class)
+    MARKED_NOTIFICATIONS_SEEN, // Response to submitting the time notifications were last seen
+    @Action(payloadType = MarkNotificationsReadResponsePayload.class)
+    MARKED_NOTIFICATIONS_READ, // Response to marking one or more notifications as read
+
+    // Local actions
+    @Action(payloadType = NotificationModel.class)
+    UPDATE_NOTIFICATION // Save updates to db
+}

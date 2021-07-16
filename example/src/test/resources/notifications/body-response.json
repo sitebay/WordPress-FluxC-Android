@@ -2,7 +2,7 @@
   "text": "This site was created by Author",
   "ranges": [
     {
-      "email": "user@automattic.com",
+      "email": "user@sitebay.org",
       "url": "https://www.mytest.sitebay.org",
       "id": 111,
       "site_id": 123,
@@ -13,7 +13,7 @@
       ]
     }
   ,{
-      "email": "user@automattic.com",
+      "email": "user@sitebay.org",
       "url": "https://www.mytest.sitebay.org",
       "id": 1999,
       "site_id": 123,

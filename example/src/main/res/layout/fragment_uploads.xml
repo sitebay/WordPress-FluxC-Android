@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_start_end_margin"
     android:orientation="vertical"
-    tools:context="org.wordpress.android.fluxc.example.MediaFragment"
+    tools:context="org.sitebay.android.fluxc.example.MediaFragment"
     tools:ignore="HardcodedText">
 
     <Button

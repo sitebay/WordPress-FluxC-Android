@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="12dp"
-    tools:context="org.wordpress.android.fluxc.example.ui.products.WooUpdateProductFragment"
+    tools:context="org.sitebay.android.fluxc.example.ui.products.WooUpdateProductFragment"
     tools:ignore="HardcodedText">
 
     <TextView
@@ -60,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/product_enter_product_id">
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:textHint="Product name" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_name"
             app:textHint="Product description" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_sku"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/product_type_title" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_slug"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_type"
             app:textHint="Product slug" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_short_desc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -136,7 +136,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_slug"
             app:textHint="Short description" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_categories"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
             app:layout_constraintStart_toEndOf="@+id/product_categories"
             app:layout_constraintTop_toBottomOf="@+id/product_short_desc" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_tags"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
             app:layout_constraintStart_toEndOf="@+id/product_catalog_visibility"
             app:layout_constraintTop_toBottomOf="@+id/product_tags" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_regular_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_catalog_visibility"
             app:textHint="Regular price" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_sale_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -244,7 +244,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_catalog_visibility"
             app:textHint="Sale price" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_width"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -259,7 +259,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_regular_price"
             app:textHint="Product Width" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_height"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_regular_price"
             app:textHint="Product Height" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_length"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_width"
             app:textHint="Product Length" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_weight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -393,7 +393,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/product_manage_stock">
 
-            <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+            <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
                 android:id="@+id/product_stock_quantity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -523,7 +523,7 @@
 
         </LinearLayout>
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_purchase_note"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -535,7 +535,7 @@
             app:layout_constraintTop_toBottomOf="@+id/variation_button_container"
             app:textHint="Purchase note" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_external_url"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -547,7 +547,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_purchase_note"
             app:textHint="External url (external products only)" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_button_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -559,7 +559,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_external_url"
             app:textHint="Button text (external products only)" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_menu_order"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -571,7 +571,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_button_text"
             app:textHint="Menu order" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -583,7 +583,7 @@
             app:layout_constraintTop_toBottomOf="@+id/product_button_text"
             app:textHint="Password" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/grouped_product_ids"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -609,7 +609,7 @@
             app:layout_constraintStart_toEndOf="@+id/grouped_product_ids"
             app:layout_constraintTop_toBottomOf="@+id/product_password" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/cross_sell_product_ids"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -635,7 +635,7 @@
             app:layout_constraintStart_toEndOf="@+id/cross_sell_product_ids"
             app:layout_constraintTop_toBottomOf="@+id/grouped_product_ids" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/upsell_product_ids"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -671,7 +671,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/upsell_product_ids" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_downloads"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -693,7 +693,7 @@
             app:layout_constraintStart_toEndOf="@id/product_downloads"
             app:layout_constraintTop_toBottomOf="@id/product_downloadable_checkbox" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_download_limit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -705,7 +705,7 @@
             app:layout_constraintTop_toBottomOf="@id/product_downloads"
             app:textHint="Download Limit" />
 
-        <org.wordpress.android.fluxc.example.ui.FloatingLabelEditText
+        <org.sitebay.android.fluxc.example.ui.FloatingLabelEditText
             android:id="@+id/product_download_expiry"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -1,0 +1,32 @@
+package org.sitebay.android.fluxc.model.activity
+
+import org.sitebay.android.fluxc.tools.FormattableContent
+import java.util.Date
+
+data class ActivityLogModel(
+    val activityID: String,
+    val summary: String,
+    val content: FormattableContent?,
+    val name: String?,
+    val type: String?,
+    val gridicon: String?,
+    val status: String?,
+    val rewindable: Boolean?,
+    val rewindID: String?,
+    val published: Date,
+    val actor: ActivityActor? = null
+) {
+    enum class Status(value: String) {
+        ERROR("error"), SUCCESS("success"), WARNING("warning");
+    }
+
+    data class ActivityActor(
+        val displayName: String?,
+        val type: String?,
+        val wpcomUserID: Long?,
+        val avatarURL: String?,
+        val role: String?
+    ) {
+        val isJetpack = { type == "Application" && displayName == "Jetpack" }
+    }
+}

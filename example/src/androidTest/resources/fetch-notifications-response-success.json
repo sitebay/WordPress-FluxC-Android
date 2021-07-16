@@ -477,7 +477,7 @@
               ],
               "url": "http:\/\/amandariu.mytest.sitebay.org",
               "site_id": 137327857,
-              "email": "amanda.riu@automattic.com",
+              "email": "amanda.riu@sitebay.org",
               "id": 57367146
             },
             {
@@ -498,7 +498,7 @@
           "text": "Amanda Riu",
           "ranges": [
             {
-              "email": "amanda.riu@automattic.com",
+              "email": "amanda.riu@sitebay.org",
               "url": "http:\/\/amandariu.mytest.sitebay.org",
               "id": 57367146,
               "site_id": 137327857,
@@ -526,7 +526,7 @@
           },
           "meta": {
             "links": {
-              "email": "amanda.riu@automattic.com",
+              "email": "amanda.riu@sitebay.org",
               "home": "http:\/\/amandariu.mytest.sitebay.org"
             },
             "ids": {

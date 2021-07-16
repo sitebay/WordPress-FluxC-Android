@@ -25,14 +25,16 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 }
-
+repositories {
+    maven { url "https://www.jitpack.io" }
+}
 dependencies {
     implementation project(':fluxc')
 
     implementation 'org.apache.commons:commons-lang3:3.7'
 
     // WordPress libs
-    implementation ('org.wordpress:utils:1.20.0') {
+    implementation ('com.github.sitebay:WordPress-Utils-Android:1.40.5') {
         // Using official volley package
         exclude group: "com.mcxiaoke.volley"
         exclude group: "com.android.support"
@@ -57,4 +59,4 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion"
 }
 
-group 'org.wordpress'
+group 'org.sitebay'
