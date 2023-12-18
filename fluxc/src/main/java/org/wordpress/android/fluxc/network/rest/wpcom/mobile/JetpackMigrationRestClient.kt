@@ -29,7 +29,7 @@ class JetpackMigrationRestClient @Inject constructor(
     suspend fun migrationComplete(
         errorHandler: (error: BaseNetworkError?) -> MigrationCompleteFetchedPayload,
     ): MigrationCompleteFetchedPayload {
-        // https://public-api.wordpress.com/wpcom/v2/mobile/migration
+        // https://my.sitebay.org/f/api/v1/wpcom/v2/mobile/migration
         val url = WPCOMV2.mobile.migration.url
         val response = wpComGsonRequestBuilder.syncPostRequest(
                 this,

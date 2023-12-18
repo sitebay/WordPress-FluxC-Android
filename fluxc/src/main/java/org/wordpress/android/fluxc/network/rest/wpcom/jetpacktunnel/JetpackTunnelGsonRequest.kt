@@ -18,7 +18,7 @@ import java.lang.reflect.Type
  * ## GET:
  *
  * Example request:
- * https://public-api.wordpress.com/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://my.sitebay.org/f/api/v1/rest/v1.1/jetpack-blogs/$siteId/rest-api/
  * ?path=%2Fwp%2Fv2%2Fposts%2F%26json%3Dtrue%26_method%3Dget&query=%7B%22status%22%3A%22draft%22%7D
  *
  * Broken down, the GET parameters are:
@@ -35,7 +35,7 @@ import java.lang.reflect.Type
  * ## POST:
  *
  * Example request:
- * https://public-api.wordpress.com/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://my.sitebay.org/f/api/v1/rest/v1.1/jetpack-blogs/$siteId/rest-api/
  *
  * Body (Form URL-Encoded):
  * path=%2Fwp%2Fv2%2Fposts%2F%26_method%3Dpost&body=%7B%22title%22%3A%22test-title%22%7D&json=true
@@ -66,7 +66,7 @@ import java.lang.reflect.Type
  * Any arguments intended for the WP-API endpoint are added to the `body` parameter.
  *
  * Example request:
- * https://public-api.wordpress.com/rest/v1.1/jetpack-blogs/$siteId/rest-api/
+ * https://my.sitebay.org/f/api/v1/rest/v1.1/jetpack-blogs/$siteId/rest-api/
  *
  * Body (Form URL-Encoded):
  * path=%2Fwp%2Fv2%2Fposts%2F123456%2F%26_method%3Ddelete%26&body=%7B%22force%22%3A%22true%22%7De&json=true

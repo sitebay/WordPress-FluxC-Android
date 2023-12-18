@@ -216,7 +216,7 @@ class FeatureFlagsRestClientTest {
     }
 
     companion object {
-        private const val API_BASE_PATH = "https://public-api.wordpress.com/wpcom/v2"
+        private const val API_BASE_PATH = "https://my.sitebay.org/f/api/v1/wpcom/v2"
         private const val API_AUTH_MOBILE_FEATURE_FLAG_PATH = "mobile/feature-flags/"
 
         private const val BUILD_NUMBER_PARAM = "build_number_param"

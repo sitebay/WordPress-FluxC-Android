@@ -23,7 +23,7 @@ import java.net.HttpURLConnection
 import javax.inject.Inject
 import javax.inject.Singleton
 
-private const val WPCOM_ENDPOINT = "https://public-api.wordpress.com"
+private const val WPCOM_ENDPOINT = "https://my.sitebay.org/f/api/v1"
 
 /**
  * This store is for use making calls that originate from React Native. It does not use

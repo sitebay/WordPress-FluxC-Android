@@ -98,7 +98,7 @@ class CommentsRestClientTest {
         val comments = payload.response!!
         assertThat(comments.size).isEqualTo(commentsResponse.comments?.size)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/${site.siteId}/comments/"
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/${site.siteId}/comments/"
         )
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mutableMapOf(
@@ -153,7 +153,7 @@ class CommentsRestClientTest {
         val commentResponse = payload.response!!
         assertThat(commentResponse).isEqualTo(comment)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/${site.siteId}/comments/${comment.remoteCommentId}/"
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/${site.siteId}/comments/${comment.remoteCommentId}/"
         )
         assertThat(bodyCaptor.lastValue).isEqualTo(
                 mutableMapOf(
@@ -206,7 +206,7 @@ class CommentsRestClientTest {
         val commentResponse = payload.response!!
         assertThat(commentResponse).isEqualTo(comment)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/${site.siteId}/comments/${comment.remoteCommentId}/"
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/${site.siteId}/comments/${comment.remoteCommentId}/"
         )
         assertThat(bodyCaptor.lastValue).isEqualTo(
                 mutableMapOf(
@@ -262,7 +262,7 @@ class CommentsRestClientTest {
         val commentResponse = payload.response!!
         assertThat(commentResponse).isEqualTo(comment)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/${site.siteId}/comments/${comment.remoteCommentId}/"
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/${site.siteId}/comments/${comment.remoteCommentId}/"
         )
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf<String, String>()
@@ -312,7 +312,7 @@ class CommentsRestClientTest {
         val commentResponse = payload.response!!
         assertThat(commentResponse).isEqualTo(comment)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/${site.siteId}/comments/" +
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/${site.siteId}/comments/" +
                         "${comment.remoteCommentId}/delete/"
         )
         assertThat(bodyCaptor.lastValue).isNull()
@@ -361,7 +361,7 @@ class CommentsRestClientTest {
         val commentResponse = payload.response!!
         assertThat(commentResponse).isEqualTo(comment)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/" +
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/" +
                         "${site.siteId}/comments/${comment.remoteCommentId}/replies/new/"
         )
         assertThat(bodyCaptor.lastValue).isEqualTo(
@@ -413,7 +413,7 @@ class CommentsRestClientTest {
         val commentResponse = payload.response!!
         assertThat(commentResponse).isEqualTo(comment)
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/" +
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/" +
                         "${site.siteId}/posts/${comment.remotePostId}/replies/new/"
         )
         assertThat(bodyCaptor.lastValue).isEqualTo(
@@ -462,7 +462,7 @@ class CommentsRestClientTest {
 
         assertThat(payload.isError).isFalse
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/" +
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/" +
                         "${site.siteId}/comments/${comment.remoteCommentId}/likes/new/"
         )
         assertThat(bodyCaptor.lastValue).isNull()
@@ -483,7 +483,7 @@ class CommentsRestClientTest {
 
         assertThat(payload.isError).isFalse
         assertThat(urlCaptor.lastValue).isEqualTo(
-                "https://public-api.wordpress.com/rest/v1.1/sites/" +
+                "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/" +
                         "${site.siteId}/comments/${comment.remoteCommentId}/likes/mine/delete/"
         )
         assertThat(bodyCaptor.lastValue).isNull()
@@ -615,7 +615,7 @@ class CommentsRestClientTest {
             parent = CommentParent().apply { ID = 41L }
             post = Post().apply {
                 ID = 85L
-                link = "https://public-api.wordpress.com/rest/v1.1/sites/11111111/posts/85"
+                link = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/11111111/posts/85"
                 title = "again"
                 type = "post"
             }

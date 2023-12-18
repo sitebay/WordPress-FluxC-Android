@@ -34,7 +34,7 @@ class FeatureFlagsRestClient @Inject constructor(
         marketingVersion: String,
         platform: String
         ): FeatureFlagsFetchedPayload {
-        // https://public-api.wordpress.com/wpcom/v2/mobile/feature-flagsdevice_id=12345&platform=android&build_number=570&marketing_version=15.1.1&identifier=com.jetpack.android
+        // https://my.sitebay.org/f/api/v1/wpcom/v2/mobile/feature-flagsdevice_id=12345&platform=android&build_number=570&marketing_version=15.1.1&identifier=com.jetpack.android
         val url = WPCOMV2.mobile.feature_flags.url
         val params = mapOf(
             "build_number" to buildNumber,

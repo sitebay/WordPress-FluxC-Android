@@ -160,39 +160,39 @@
   "_links": {
     "self": [
       {
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/media/44"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/media/44"
       }
     ],
     "collection": [
       {
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/media"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/media"
       }
     ],
     "about": [
       {
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/types/attachment"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/types/attachment"
       }
     ],
     "author": [
       {
         "embeddable": true,
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/users/1"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/users/1"
       }
     ],
     "replies": [
       {
         "embeddable": true,
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/comments?post=44"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/comments?post=44"
       }
     ],
     "wp:action-unfiltered-html": [
       {
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/media/44?post=44"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/media/44?post=44"
       }
     ],
     "wp:action-assign-author": [
       {
-        "href": "https://public-api.wordpress.com/wp/v2/sites/[site_id]/media/44?post=44"
+        "href": "https://my.sitebay.org/f/api/v1/wp/v2/sites/[site_id]/media/44?post=44"
       }
     ],
     "curies": [

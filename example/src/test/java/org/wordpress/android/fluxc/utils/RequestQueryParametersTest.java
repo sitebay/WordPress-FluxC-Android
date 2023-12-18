@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 public class RequestQueryParametersTest {
     @Test
     public void testBaseRequestAddQueryParameters() {
-        String baseUrl = "https://public-api.wordpress.com/rest/v1.1/sites/56/posts/";
+        String baseUrl = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/56/posts/";
 
         WPComGsonRequest<Object> wpComGsonRequest = WPComGsonRequest.buildGetRequest(baseUrl, null, null, null, null);
 
@@ -37,7 +37,7 @@ public class RequestQueryParametersTest {
 
     @Test
     public void testWPComGsonRequestConstructorGet() {
-        String baseUrl = "https://public-api.wordpress.com/rest/v1.1/sites/56/posts/";
+        String baseUrl = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/56/posts/";
 
         Map<String, String> params = new HashMap<>();
         params.put("offset", "20");
@@ -49,7 +49,7 @@ public class RequestQueryParametersTest {
 
     @Test
     public void testWPComGsonRequestConstructorPost() {
-        String baseUrl = "https://public-api.wordpress.com/rest/v1.1/sites/56/posts/";
+        String baseUrl = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/56/posts/";
 
         Map<String, Object> body = new HashMap<>();
         body.put("offset", "20");

@@ -106,7 +106,7 @@ class ActivityLogRestClientTest {
 
         activityRestClient.fetchActivity(payload, number, offset)
 
-        assertEquals(urlCaptor.firstValue, "https://public-api.wordpress.com/wpcom/v2/sites/$siteId/activity/")
+        assertEquals(urlCaptor.firstValue, "https://my.sitebay.org/f/api/v1/wpcom/v2/sites/$siteId/activity/")
         with(paramsCaptor.firstValue) {
             assertEquals("1", this["page"])
             assertEquals("$number", this["number"])
@@ -129,7 +129,7 @@ class ActivityLogRestClientTest {
         )
         activityRestClient.fetchActivity(payload, number, offset)
 
-        assertEquals(urlCaptor.firstValue, "https://public-api.wordpress.com/wpcom/v2/sites/$siteId/activity/")
+        assertEquals(urlCaptor.firstValue, "https://my.sitebay.org/f/api/v1/wpcom/v2/sites/$siteId/activity/")
         with(paramsCaptor.firstValue) {
             assertEquals("1", this["page"])
             assertEquals("$number", this["number"])

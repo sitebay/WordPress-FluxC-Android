@@ -224,7 +224,7 @@ class BlazeCampaignsRestClientTest {
     }
 
     companion object {
-        private const val API_BASE_PATH = "https://public-api.wordpress.com/wpcom/v2"
+        private const val API_BASE_PATH = "https://my.sitebay.org/f/api/v1/wpcom/v2"
         private const val API_SITE_PATH = "$API_BASE_PATH/sites"
         private const val API_AUTH_BLAZE_CAMPAIGNS_PATH = "wordads/dsp/api/v1/search/campaigns/site"
         private const val SUCCESS_JSON = "wp/blaze/blaze-campaigns.json"

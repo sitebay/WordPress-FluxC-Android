@@ -182,7 +182,7 @@ class ReferrersRestClientTest {
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(ReferrersResponse(null, null, null, emptyList()))
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/referrers/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/referrers/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "max" to pageSize.toString(),
@@ -222,7 +222,7 @@ class ReferrersRestClientTest {
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/referrers/spam/new/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/referrers/spam/new/")
     }
 
     @Test
@@ -258,7 +258,7 @@ class ReferrersRestClientTest {
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
                 .isEqualTo(
-                        "https://public-api.wordpress.com/rest/v1.1/sites/12/stats/referrers/spam/delete/"
+                        "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/referrers/spam/delete/"
                 )
     }
 

@@ -50,7 +50,7 @@ class ReactNativeFragment : Fragment() {
                 |'https://mysite.com/wp-json/wp/v2/media',
                 |just enter 'wp/v2/media'.
                 |For a WP.com site, instead of entering
-                |'https://public-api.wordpress.com/wp/v2/sites/12345689/media',
+                |'https://my.sitebay.org/f/api/v1/wp/v2/sites/12345689/media',
                 |just enter 'wp/v2/media' (site id is handled automatically)""".trimMargin()
         } ?: "Site with url not loaded. All calls will fail."
 

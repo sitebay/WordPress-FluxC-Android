@@ -57,10 +57,10 @@
       "site": 185525191
     },
     "links": {
-      "comment": "https://public-api.wordpress.com/rest/v1/comments/456",
-      "user": "https://public-api.wordpress.com/rest/v1/users/123",
-      "post": "https://public-api.wordpress.com/rest/v1/posts/789",
-      "site": "https://public-api.wordpress.com/rest/v1/sites/000"
+      "comment": "https://my.sitebay.org/f/api/v1/rest/v1/comments/456",
+      "user": "https://my.sitebay.org/f/api/v1/rest/v1/users/123",
+      "post": "https://my.sitebay.org/f/api/v1/rest/v1/posts/789",
+      "site": "https://my.sitebay.org/f/api/v1/rest/v1/sites/000"
     }
   },
   "type": "comment",

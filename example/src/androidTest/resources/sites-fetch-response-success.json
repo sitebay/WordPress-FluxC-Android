@@ -111,10 +111,10 @@
     },
     "meta": {
       "links": {
-        "self": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234",
-        "help": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234\/help",
-        "posts": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234\/posts\/",
-        "comments": "https:\/\/public-api.wordpress.com\/rest\/v1.1\/sites\/1234\/comments\/",
+        "self": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1.1\/sites\/1234",
+        "help": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1.1\/sites\/1234\/help",
+        "posts": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1.1\/sites\/1234\/posts\/",
+        "comments": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1.1\/sites\/1234\/comments\/",
         "xmlrpc": "https:\/\/en.wordpress.com\/xmlrpc.php"
       }
     },

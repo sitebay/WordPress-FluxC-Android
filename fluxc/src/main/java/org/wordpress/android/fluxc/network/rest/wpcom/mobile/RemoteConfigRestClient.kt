@@ -28,7 +28,7 @@ class RemoteConfigRestClient @Inject constructor(
     userAgent: UserAgent
 ) : BaseWPComRestClient(appContext, dispatcher, requestQueue, accessToken, userAgent) {
     suspend fun fetchRemoteConfig(): RemoteConfigFetchedPayload {
-        // https://public-api.wordpress.com/wpcom/v2/mobile/remote_config
+        // https://my.sitebay.org/f/api/v1/wpcom/v2/mobile/remote_config
         val url = WPCOMV2.mobile.remote_config.url
         val response = wpComGsonRequestBuilder.syncGetRequest(
             this,

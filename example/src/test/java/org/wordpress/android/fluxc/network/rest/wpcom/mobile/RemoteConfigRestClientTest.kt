@@ -170,7 +170,7 @@ class RemoteConfigRestClientTest {
     }
 
     companion object {
-        private const val API_BASE_PATH = "https://public-api.wordpress.com/wpcom/v2"
+        private const val API_BASE_PATH = "https://my.sitebay.org/f/api/v1/wpcom/v2"
         private const val API_MOBILE_REMOTE_CONFIG_PATH = "mobile/remote-config/"
 
         private const val SUCCESS_JSON = "wp/mobile/remote-config-success.json"

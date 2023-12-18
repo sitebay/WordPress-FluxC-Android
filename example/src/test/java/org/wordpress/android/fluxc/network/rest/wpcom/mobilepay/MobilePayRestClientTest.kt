@@ -94,7 +94,7 @@ class MobilePayRestClientTest {
 
         // THEN
         assertThat(urlCaptor.firstValue).isEqualTo(
-            "https://public-api.wordpress.com/wpcom/v2/iap/orders/"
+            "https://my.sitebay.org/f/api/v1/wpcom/v2/iap/orders/"
         )
     }
 

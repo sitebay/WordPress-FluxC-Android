@@ -155,7 +155,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(response)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/")
         assertThat(paramsCaptor.lastValue).isEmpty()
     }
 
@@ -188,7 +188,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(response)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/posts/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/posts/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "fields" to "ID,title,URL,discussion,like_count,date,featured_image",
@@ -227,7 +227,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(POST_STATS_RESPONSE)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/post/1/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/post/1/")
         assertThat(paramsCaptor.lastValue).isEmpty()
     }
 
@@ -261,7 +261,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(VISITS_RESPONSE)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/visits/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/visits/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "date" to formattedDate,
@@ -313,7 +313,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(FOLLOWERS_RESPONSE)
-        val expectedUrl = "https://public-api.wordpress.com/rest/v1.1/sites/12/stats/followers/"
+        val expectedUrl = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/followers/"
         assertThat(urlCaptor.lastValue).isEqualTo(expectedUrl)
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
@@ -352,7 +352,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(TOP_COMMENTS_RESPONSE)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/comments/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/comments/")
     }
 
     @Test
@@ -383,7 +383,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(TAGS_RESPONSE)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/tags/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/tags/")
         assertThat(paramsCaptor.lastValue).isEqualTo(mapOf("max" to "$pageSize"))
     }
 
@@ -415,7 +415,7 @@ class InsightsRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(PUBLICIZE_RESPONSE)
-        val url = "https://public-api.wordpress.com/rest/v1.1/sites/12/stats/publicize/"
+        val url = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/publicize/"
         assertThat(urlCaptor.lastValue).isEqualTo(url)
     }
 

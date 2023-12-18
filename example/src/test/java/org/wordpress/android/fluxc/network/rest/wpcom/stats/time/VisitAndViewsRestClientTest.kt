@@ -111,7 +111,7 @@ class VisitAndViewsRestClientTest {
         assertThat(responseModel.response).isNotNull()
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/visits/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/visits/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "quantity" to pageSize.toString(),

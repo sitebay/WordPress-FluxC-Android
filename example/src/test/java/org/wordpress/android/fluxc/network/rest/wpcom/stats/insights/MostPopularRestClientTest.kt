@@ -64,7 +64,7 @@ class MostPopularRestClientTest {
 
         assertThat(responseModel.response).isNotNull
         assertThat(responseModel.response).isEqualTo(response)
-        assertThat(urlCaptor.lastValue).isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/insights/")
+        assertThat(urlCaptor.lastValue).isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/insights/")
         assertThat(paramsCaptor.lastValue).isEmpty()
     }
 

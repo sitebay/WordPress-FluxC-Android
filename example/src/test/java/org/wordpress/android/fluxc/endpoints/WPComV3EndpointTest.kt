@@ -13,7 +13,7 @@ class WPComV3EndpointTest {
 
     @Test
     fun testUrls() {
-        assertThat("https://public-api.wordpress.com/wpcom/v3/sites/123/blogging-prompts/")
+        assertThat("https://my.sitebay.org/f/api/v1/wpcom/v3/sites/123/blogging-prompts/")
             .isEqualTo(WPCOMV3.sites.site(123).blogging_prompts.url)
     }
 }

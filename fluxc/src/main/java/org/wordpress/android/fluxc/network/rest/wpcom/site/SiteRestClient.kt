@@ -231,7 +231,7 @@ class SiteRestClient @Inject constructor(
     }
 
     /**
-     * Calls the API at https://public-api.wordpress.com/rest/v1.1/sites/new/ to create a new site
+     * Calls the API at https://my.sitebay.org/f/api/v1/rest/v1.1/sites/new/ to create a new site
      * @param siteName The domain of the site
      * @param siteTitle The title of the site
      * @param language The language of the site

@@ -100,8 +100,8 @@
               "site": 1047865
             },
             "links": {
-              "post": "https:\/\/public-api.wordpress.com\/rest\/v1\/posts\/48589",
-              "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/1047865"
+              "post": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/posts\/48589",
+              "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/1047865"
             }
           },
           "type": "post"
@@ -114,9 +114,9 @@
           "user": 5
         },
         "links": {
-          "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/1047865",
-          "post": "https:\/\/public-api.wordpress.com\/rest\/v1\/posts\/48589",
-          "user": "https:\/\/public-api.wordpress.com\/rest\/v1\/users\/5"
+          "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/1047865",
+          "post": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/posts\/48589",
+          "user": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/users\/5"
         }
       },
       "title": "New Post",
@@ -236,8 +236,8 @@
           "order": 2235
         },
         "links": {
-          "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/153482281",
-          "order": "https:\/\/public-api.wordpress.com\/rest\/v1\/orders\/2235"
+          "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/153482281",
+          "order": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/orders\/2235"
         }
       },
       "title": "New Order",
@@ -341,9 +341,9 @@
               "site": 153482281
             },
             "links": {
-              "comment": "https://public-api.wordpress.com/rest/v1/comments/2733",
-              "post": "https://public-api.wordpress.com/rest/v1/posts/33",
-              "site": "https://public-api.wordpress.com/rest/v1/sites/153482281"
+              "comment": "https://my.sitebay.org/f/api/v1/rest/v1/comments/2733",
+              "post": "https://my.sitebay.org/f/api/v1/rest/v1/posts/33",
+              "site": "https://my.sitebay.org/f/api/v1/rest/v1/sites/153482281"
             }
           },
           "type": "comment",
@@ -380,10 +380,10 @@
           "site": 153482281
         },
         "links": {
-          "user": "https://public-api.wordpress.com/rest/v1/users/0",
-          "comment": "https://public-api.wordpress.com/rest/v1/comments/2733",
-          "post": "https://public-api.wordpress.com/rest/v1/posts/33",
-          "site": "https://public-api.wordpress.com/rest/v1/sites/153482281"
+          "user": "https://my.sitebay.org/f/api/v1/rest/v1/users/0",
+          "comment": "https://my.sitebay.org/f/api/v1/rest/v1/comments/2733",
+          "post": "https://my.sitebay.org/f/api/v1/rest/v1/posts/33",
+          "site": "https://my.sitebay.org/f/api/v1/rest/v1/sites/153482281"
         }
       },
       "title": "Product Review",
@@ -487,9 +487,9 @@
               "site": 153482281
             },
             "links": {
-              "comment": "https:\/\/public-api.wordpress.com\/rest\/v1\/comments\/2716",
-              "post": "https:\/\/public-api.wordpress.com\/rest\/v1\/posts\/2231",
-              "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/153482281"
+              "comment": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/comments\/2716",
+              "post": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/posts\/2231",
+              "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/153482281"
             }
           },
           "type": "comment",
@@ -518,10 +518,10 @@
           "site": 153482281
         },
         "links": {
-          "user": "https:\/\/public-api.wordpress.com\/rest\/v1\/users\/0",
-          "comment": "https:\/\/public-api.wordpress.com\/rest\/v1\/comments\/2716",
-          "post": "https:\/\/public-api.wordpress.com\/rest\/v1\/posts\/2231",
-          "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/153482281"
+          "user": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/users\/0",
+          "comment": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/comments\/2716",
+          "post": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/posts\/2231",
+          "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/153482281"
         }
       },
       "title": "Product Review",
@@ -596,8 +596,8 @@
           "order": 88
         },
         "links": {
-          "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/141286411",
-          "order": "https:\/\/public-api.wordpress.com\/rest\/v1\/orders\/88"
+          "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/141286411",
+          "order": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/orders\/88"
         }
       },
       "title": "New Order",
@@ -693,8 +693,8 @@
           "post": 214
         },
         "links": {
-          "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/140191676",
-          "post": "https:\/\/public-api.wordpress.com\/rest\/v1\/posts\/214"
+          "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/140191676",
+          "post": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/posts\/214"
         }
       },
       "title": "1 Like",

@@ -198,7 +198,7 @@ class MockedStack_EditorThemeStoreTest : MockedStack_Base() {
         Assert.assertTrue(countDownLatch.await(TestUtils.DEFAULT_TIMEOUT_MS.toLong(), MILLISECONDS))
 
         val id = payloadWithGSS.site.siteId
-        val expectedUrl = "https://public-api.wordpress.com/wp-block-editor/v1/sites/$id/settings"
+        val expectedUrl = "https://my.sitebay.org/f/api/v1/wp-block-editor/v1/sites/$id/settings"
         interceptor.assertExpectedUrl(expectedUrl)
     }
 
@@ -215,7 +215,7 @@ class MockedStack_EditorThemeStoreTest : MockedStack_Base() {
         Assert.assertTrue(countDownLatch.await(TestUtils.DEFAULT_TIMEOUT_MS.toLong(), MILLISECONDS))
 
         val id = payloadWithGSS.site.siteId
-        val expectedUrl = "https://public-api.wordpress.com/wp/v2/sites/$id/themes"
+        val expectedUrl = "https://my.sitebay.org/f/api/v1/wp/v2/sites/$id/themes"
         interceptor.assertExpectedUrl(expectedUrl)
     }
 
@@ -233,7 +233,7 @@ class MockedStack_EditorThemeStoreTest : MockedStack_Base() {
 
         // In case of failure we call the theme endpoint
         val id = payloadWithGSS.site.siteId
-        val expectedUrl = "https://public-api.wordpress.com/wp/v2/sites/$id/themes"
+        val expectedUrl = "https://my.sitebay.org/f/api/v1/wp/v2/sites/$id/themes"
         interceptor.assertExpectedUrl(expectedUrl)
     }
 

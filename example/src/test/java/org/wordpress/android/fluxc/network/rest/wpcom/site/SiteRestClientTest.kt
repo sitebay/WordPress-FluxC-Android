@@ -88,7 +88,7 @@ class SiteRestClientTest {
         assertThat(responseModel.name).isEqualTo(name)
         assertThat(responseModel.siteId).isEqualTo(siteId)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "fields" to "ID,URL,name,description,jetpack,jetpack_connection," +
@@ -137,9 +137,9 @@ class SiteRestClientTest {
         assertThat(responseModel.sites[0].siteId).isEqualTo(siteId)
 
         assertThat(urlCaptor.firstValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.2/me/sites/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.2/me/sites/")
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/me/sites/features/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/me/sites/features/")
         assertThat(paramsCaptor.firstValue).isEqualTo(
                 mapOf(
                         "filters" to "wpcom",
@@ -169,7 +169,7 @@ class SiteRestClientTest {
         assertThat(responseModel.sites[0].siteId).isEqualTo(siteId)
 
         assertThat(urlCaptor.firstValue)
-            .isEqualTo("https://public-api.wordpress.com/rest/v1.1/me/sites/")
+            .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/me/sites/")
         assertThat(paramsCaptor.firstValue).isEqualTo(
             mapOf(
                 "fields" to "ID,URL,name,description,jetpack,jetpack_connection," +
@@ -258,7 +258,7 @@ class SiteRestClientTest {
         assertThat(result.dryRun).isEqualTo(dryRun)
 
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/new/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/new/")
         assertThat(bodyCaptor.lastValue).isEqualTo(
                 mapOf(
                         "blog_name" to siteName,
@@ -316,7 +316,7 @@ class SiteRestClientTest {
         assertThat(result.dryRun).isEqualTo(dryRun)
 
         assertThat(urlCaptor.lastValue)
-            .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/new/")
+            .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/new/")
         assertThat(bodyCaptor.lastValue).isEqualTo(
             mapOf(
                 "blog_name" to siteTitle,
@@ -375,7 +375,7 @@ class SiteRestClientTest {
         assertThat(result.dryRun).isEqualTo(dryRun)
 
         assertThat(urlCaptor.lastValue)
-            .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/new/")
+            .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/new/")
         assertThat(bodyCaptor.lastValue).isEqualTo(
             mapOf(
                 "blog_name" to "",
@@ -431,7 +431,7 @@ class SiteRestClientTest {
         assertThat(result.dryRun).isEqualTo(dryRun)
 
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/new/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/new/")
         assertThat(bodyCaptor.lastValue).isEqualTo(
                 mapOf(
                         "blog_name" to siteName,
@@ -461,7 +461,7 @@ class SiteRestClientTest {
         assertThat(responseModel.postFormats[0].slug).isEqualTo(slug)
         assertThat(responseModel.postFormats[0].displayName).isEqualTo(displayName)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/post-formats/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/post-formats/")
     }
 
     @Test

@@ -351,7 +351,7 @@ class QRCodeAuthRestClientTest {
     }
 
     companion object {
-        private const val API_BASE_PATH = "https://public-api.wordpress.com/wpcom/v2"
+        private const val API_BASE_PATH = "https://my.sitebay.org/f/api/v1/wpcom/v2"
         private const val API_AUTH_QRCODE_VALIDATE_PATH = "auth/qr-code/validate/"
         private const val API_AUTH_QRCODE_AUTHENTICATE_PATH = "auth/qr-code/authenticate/"
 

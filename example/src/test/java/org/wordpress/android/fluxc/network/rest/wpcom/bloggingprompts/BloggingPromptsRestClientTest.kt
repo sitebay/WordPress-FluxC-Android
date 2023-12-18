@@ -244,7 +244,7 @@ class BloggingPromptsRestClientTest {
     }
 
     companion object {
-        private const val API_BASE_PATH = "https://public-api.wordpress.com/wpcom/v3"
+        private const val API_BASE_PATH = "https://my.sitebay.org/f/api/v1/wpcom/v3"
         private const val API_SITE_PATH = "$API_BASE_PATH/sites"
         private const val API_BLOGGING_PROMPTS_PATH = "blogging-prompts/"
 

@@ -140,7 +140,7 @@ class CommentsMapperTest {
             post = Post().apply {
                 type = "post"
                 title = entity.postTitle ?: ""
-                link = "https://public-api.wordpress.com/rest/v1.1/sites/185464053/posts/85"
+                link = "https://my.sitebay.org/f/api/v1/rest/v1.1/sites/185464053/posts/85"
                 ID = entity.remotePostId
             }
             status = entity.status ?: ""

@@ -121,7 +121,7 @@ class SiteHomepageRestClientTest {
 
         assertThat(responseModel).isEqualTo(Success(response))
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/homepage/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/homepage/")
         return assertThat(paramsCaptor.lastValue).isEqualTo(expectedParams)
     }
 

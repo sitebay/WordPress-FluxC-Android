@@ -513,7 +513,7 @@ class ScanRestClientTest {
     }
 
     companion object {
-        private const val API_BASE_PATH = "https://public-api.wordpress.com/wpcom/v2"
+        private const val API_BASE_PATH = "https://my.sitebay.org/f/api/v1/wpcom/v2"
         private const val JP_COMPLETE_SCAN_IDLE_JSON = "wp/jetpack/scan/jp-complete-scan-idle.json"
         private const val JP_COMPLETE_SCAN_SCANNING_JSON = "wp/jetpack/scan/jp-complete-scan-scanning.json"
         private const val JP_BACKUP_DAILY_SCAN_UNAVAILABLE_JSON =

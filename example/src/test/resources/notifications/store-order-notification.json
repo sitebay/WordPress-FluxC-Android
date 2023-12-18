@@ -67,8 +67,8 @@
       "order": 88
     },
     "links": {
-      "site": "https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/141286411",
-      "order": "https:\/\/public-api.wordpress.com\/rest\/v1\/orders\/88"
+      "site": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/sites\/141286411",
+      "order": "https:\/\/my.sitebay.org/f/api/v1\/rest\/v1\/orders\/88"
     }
   },
   "title": "New Order",

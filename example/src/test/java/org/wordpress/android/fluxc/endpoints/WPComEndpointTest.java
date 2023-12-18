@@ -75,10 +75,10 @@ public class WPComEndpointTest {
 
     @Test
     public void testUrls() {
-        assertEquals("https://public-api.wordpress.com/rest/v1/sites/", WPCOMREST.sites.getUrlV1());
-        assertEquals("https://public-api.wordpress.com/rest/v1.1/sites/", WPCOMREST.sites.getUrlV1_1());
-        assertEquals("https://public-api.wordpress.com/rest/v1.2/sites/", WPCOMREST.sites.getUrlV1_2());
-        assertEquals("https://public-api.wordpress.com/rest/v1.3/sites/", WPCOMREST.sites.getUrlV1_3());
-        assertEquals("https://public-api.wordpress.com/is-available/email/", WPCOMREST.is_available.email.getUrlV0());
+        assertEquals("https://my.sitebay.org/f/api/v1/rest/v1/sites/", WPCOMREST.sites.getUrlV1());
+        assertEquals("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/", WPCOMREST.sites.getUrlV1_1());
+        assertEquals("https://my.sitebay.org/f/api/v1/rest/v1.2/sites/", WPCOMREST.sites.getUrlV1_2());
+        assertEquals("https://my.sitebay.org/f/api/v1/rest/v1.3/sites/", WPCOMREST.sites.getUrlV1_3());
+        assertEquals("https://my.sitebay.org/f/api/v1/is-available/email/", WPCOMREST.is_available.email.getUrlV0());
     }
 }

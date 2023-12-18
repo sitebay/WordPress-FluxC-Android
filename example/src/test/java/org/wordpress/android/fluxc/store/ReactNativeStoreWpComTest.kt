@@ -50,7 +50,7 @@ class ReactNativeStoreWpComTest {
         whenever(site.siteId).thenReturn(123456L)
         whenever(site.isUsingWpComRestApi).thenReturn(true)
 
-        val expectedUrl = "https://public-api.wordpress.com/wp/v2/sites/${site.siteId}/media"
+        val expectedUrl = "https://my.sitebay.org/f/api/v1/wp/v2/sites/${site.siteId}/media"
         whenever(wpComRestClient.getRequest(expectedUrl, mapOf("paramKey" to "paramValue"), ::Success, ::Error))
                 .thenReturn(expectedResponse)
 
@@ -66,7 +66,7 @@ class ReactNativeStoreWpComTest {
         whenever(site.siteId).thenReturn(123456L)
         whenever(site.isUsingWpComRestApi).thenReturn(true)
 
-        val expectedUrl = "https://public-api.wordpress.com/wp/v2/sites/${site.siteId}/media/100"
+        val expectedUrl = "https://my.sitebay.org/f/api/v1/wp/v2/sites/${site.siteId}/media/100"
         whenever(wpComRestClient.postRequest(
             expectedUrl,
             mapOf("paramKey" to "paramValue"),

@@ -121,7 +121,7 @@ class FileDownloadsRestClientTest {
         assertThat(responseModel.response).isNotNull()
         assertThat(responseModel.response).isEqualTo(response)
         assertThat(urlCaptor.lastValue)
-                .isEqualTo("https://public-api.wordpress.com/rest/v1.1/sites/12/stats/file-downloads/")
+                .isEqualTo("https://my.sitebay.org/f/api/v1/rest/v1.1/sites/12/stats/file-downloads/")
         assertThat(paramsCaptor.lastValue).isEqualTo(
                 mapOf(
                         "num" to pageSize.toString(),

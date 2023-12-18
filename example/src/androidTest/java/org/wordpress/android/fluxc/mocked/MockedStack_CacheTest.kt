@@ -31,7 +31,7 @@ import kotlin.properties.Delegates.notNull
  */
 class MockedStack_CacheTest : MockedStack_Base() {
     companion object {
-        private const val requestUrl = "https://public-api.wordpress.com/rest/v1/testrequest"
+        private const val requestUrl = "https://my.sitebay.org/f/api/v1/rest/v1/testrequest"
 
         private val responseJson = JsonObject().apply { addProperty("success", "yes") }
 

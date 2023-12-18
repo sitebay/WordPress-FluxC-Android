@@ -1,7 +1,7 @@
 package org.wordpress.android.fluxc.annotations.endpoint;
 
 public class WPComV3Endpoint {
-    private static final String WPCOM_REST_PREFIX = "https://public-api.wordpress.com";
+    private static final String WPCOM_REST_PREFIX = "https://my.sitebay.org/f/api/v1";
     private static final String WPCOM_V3_PREFIX = WPCOM_REST_PREFIX + "/wpcom/v3";
 
     private final String mEndpoint;
